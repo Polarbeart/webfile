@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>index</title>
+    <style type="text/css" rel="stylesheet">
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        a{
+            color:black;
+            text-decoration:none;
+            transition:0.5s;
+        }
+        .top{
+            width:1400px;
+            height:60px;
+            border:red solid 1px;
+            background: url("websucai/2_logo.png") no-repeat;
+            margin:0 auto;
+            border:none;
+
+        }
+        .head{
+            width:1400px;
+            height:111px;
+            border:1px red solid;
+            background: url("websucai/2_top.png");
+            margin:0 auto;
+            border:none;
+        }
+        .content{
+            width:1030px;
+            border:1px gray solid;
+            height:1770px;
+            margin:0 auto;
+            border-radius: 5px;
+        }
+        .left{
+            width:155px;
+            height:1767px;
+            border:1px gray solid ;
+            float:left;
+            background-color: #fafafa;
+            border:none;
+        }
+        .left ul li{
+            list-style: none;
+            /*margin-top:17px;*/
+        }
+
+        .left_li{
+            width:155px;
+            height:45px;
+            border:1px red solid;
+            text-align: center;
+            transition:width 2s;
+            -webkit-transition:width 2s;
+            line-height:45px;
+            border:none;
+
+            /*margin:0 auto;*/
+        }
+        /*.left_li :hover{*/
+            /*width:155px;*/
+            /*height:50px;*/
+
+        /*}*/
+        .left_li2{
+            width:155px;
+            height:45px;
+            border-top:1px gray solid;
+            text-align: center;
+            transition:width 2s;
+            -webkit-transition:width 2s;
+            line-height:45px;
+            /*margin:0 auto;*/
+        }
+
+        .left ul li :hover{
+             background-color:#e1e4ea;
+         }
+        .left ul li :visited{
+            background-color: #00a1d7;
+        }
+        .right{
+            width:871px;
+            height:1767px;
+            border-left:1px gray solid;
+            /*border:none;*/
+            float:left;
+        }
+        .right_1 {
+            height:340px;
+            width:861px;
+            border:1px black solid;
+            /*background-color: #bbb;*/
+            position:relative;
+            float:left;
+            padding:4px;
+            border:none;
+        }
+        .right_2{
+            height:400px;
+            width:871px;
+            border:1px black solid;
+            border:none;
+        }
+        .right_3{
+            height:250px;
+            width:871px;
+            border:1px black solid;
+            border:none;
+        }
+        .right_4{
+            height:250px;
+            width:871px;
+            border:1px black solid;
+            border:none;
+        }
+        .top ul li{
+            float:left;
+            margin-left:19px;
+            color:white;
+            list-style:none;
+        }
+        .top ul li a:link{
+            color:gray;
+            text-decoration:none;
+        }
+        .top ul li a:hover{
+            color:dodgerblue;
+        }
+        .chengjiu{
+            margin-top:10px;
+            width:860px;
+            height:260px;
+            background: url("websucai/chengjiu.png")no-repeat;
+            background-position:center center ;
+            position: relative;
+        }
+        .genghuanxunzhang{
+            width:105px;height:40px;
+            border-radius: 5px;
+            position:absolute;
+            right:125px;bottom:90px;
+            border:1px red solid;
+            background-color:#00a1d6 ;
+            text-align: center;
+            line-height:40px;
+            color:white
+            border:none;
+        }
+        .genghuanxunzhang:hover{
+            background-color: #00b5e5;
+        }
+        .jiesuo{
+            width:77px;
+            height:19px;
+            border-radius: 5px;
+            border:1px red solid;
+            float:left;
+            margin-left:17px;
+            font-size:12px;
+            margin-top:10px;
+            border:none;
+        }
+        .jiesuo:hover{
+            background-color: #00a1d7;
+            color:white;
+        }
+        .picdiv{
+            height:90px;
+            width:850px;
+            border:1px red solid;
+            margin-left:17px;
+            margin-top:15px;
+            position: relative;
+            border:none;
+        }
+        .img{
+            width:70px;
+            height:70px;
+            border:1px solid gray;
+            border-radius: 5px;
+            display: table-cell;
+            vertical-align: middle;
+            float:left;
+        }
+        .img p{
+            float:left;
+
+            /*margin-left:150px;*/
+        }
+        .picdiv ul li {
+            font-size: 12px;
+            /*color:blue;*/
+            margin-top:5px;
+            margin-left:80px;
+            list-style:none;
+
+        }
+        .words{
+            width:400px;
+            height:20px;
+            border:1px red solid;
+            position:absolute;
+            top:6px;
+            right:50px;
+            border:none;
+
+        }
+        .words ul li{
+            float:left;
+            margin-left:45px;
+        }
+        .img img{
+            /*图片自定义缩放*/
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+<div class="top">
+    <a href="#"><img src="websucai/2_logo.png"></a>
+    <div style="width:1000px;height:50px;position:absolute;top:8px;left:130px;padding-left:20px;float:left;margin:0 auto;">
+    <ul>
+        <li><a href="index.html">主站</a></li>
+        <li><a href="#">番剧</a></li>
+        <li><a href="#">游戏中心</a></li>
+        <li><a href="#">直播</a></li>
+        <li><a href="#">会员购</a></li>
+        <li><a href="#">漫画</a></li>
+        <li><a href="#">赛事</a></li>
+        <li><a href="#">BW</a></li>
+        <li><a href="#">大会员</a></li>
+        <li><a href="#">消息</a></li>
+        <li><a href="#">动态</a></li>
+        <li><a href="#">收藏</a></li>
+        <li><a href="#">历史</a></li>
+        <li><a href="#">创作中心</a></li>
+        <li><div style="width:60px;height:30px;background-color: #fb7299">投稿</div></li>
+    </ul>
+
+    </div>
+</div>
+<div class="head"></div>
+<div class="content">
+    <div class="left">
+        <ul>
+            <div style="margin-left:25px;margin-top:15px;color:gray;">个人中心</div><br>
+            <li><a href="#"><div class="left_li" style="border-top:1px solid gray;">首 &nbsp;页</div></a></li>
+            <li><a href="#"><div class="left_li">大会员</div></a></li>
+            <li><a href="#"><div class="left_li">会员积分</div></a></li>
+            <li><a href="#"><div class="left_li">我的信息</div></a></li>
+            <li><a href="#"><div class="left_li">我的头像</div></a></li>
+            <li><a href="#"><div class="left_li">我的勋章</div></a></li>
+            <li><a href="#"><div class="left_li">账号安全</div></a></li>
+            <li><a href="#"><div class="left_li">黑名单管理</div></a></li>
+            <li><a href="#"><div class="left_li">我的硬币</div></a></li>
+            <li><a href="#"><div class="left_li">我的记录</div></a></li>
+            <li><a href="#"><div class="left_li">实名认证</div></a></li>
+            <li><a href="#"><div class="left_li">邀请注册</div></a></li>
+            <li><a href="#"><div class="left_li2" style="border-top:1px solid gray;">个人空间&nbsp;&nbsp;&nbsp;></div></a></li>
+            <li><a href="#"><div class="left_li2" style="border-top:1px solid gray;">我的钱包&nbsp;&nbsp;&nbsp;></div></a></li>
+            <li><a href="#"><div class="left_li2" style="border-top:1px solid gray;">投稿管理&nbsp;&nbsp;&nbsp;></div></a></li>
+            <li><a href="#"><div class="left_li2" style="border-bottom:1px solid gray;">直播中心&nbsp;&nbsp;&nbsp;></div></a></li>
+
+
+
+
+        </ul>
+
+    </div>
+    <div class="right">
+        <div class="right_1">
+            <div style="width:875px;height:56px;border-bottom:1px gray solid;margin:-5px;">
+                <p  style="margin-left:60px;line-height:50px;color:deepskyblue">|成就徽章</p>
+            </div>
+            <div class="chengjiu">
+                <a href="#"><div class="genghuanxunzhang">
+                    更换勋章
+                </div></a>
+            </div>
+            <div style="width:200px;height:30px;border:none;margin-left:20px;">
+                <p><a href="#">成就勋章</a>&nbsp;&nbsp;&nbsp;<a href="#">粉丝勋章</a></p>
+            </div>
+        </div>
+        <HR align=center width=800 color=#987cb9 SIZE=0.1>
+        <div class="right_2">
+            <a href="#"><div class="jiesuo">全部成就徽章</div></a>
+            <a href="#"> <div class="jiesuo">解锁成就徽章</div><br><br></a>
+            <p style="margin-left: 16px;">UP主系列</p>
+            <div class="picdiv">
+                <div class="img"><img src="websucai/青铜殿堂.png"></div>
+                <p>&nbsp;&nbsp;青铜殿堂</p>
+                <ul>
+                    <li> 单个自制视频总播放数>=1万</li>
+                    <li style="color:gray;"> 普通勋章</li>
+                </ul>
+                <div class="words">
+                    <ul style="float:left;">
+                        <li> &nbsp;&nbsp;青铜殿堂</li>
+                        <li>&nbsp;&nbsp;白银殿堂</li>
+                        <li> &nbsp;&nbsp;黄金殿堂</li>
+                        <li style="margin-left:-10px;"><img src="websucai/2_jianxibanyungong.png"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="picdiv">
+                <div class="img"><img src="websucai/见习搬运工.png"></div>
+                <p>&nbsp;&nbsp;见习搬运工</p>
+                <ul>
+                    <li>转载视频投稿总个数>=10</li>
+                    <li style="color:gray;"> 普通勋章</li>
+                </ul>
+                <div class="words">
+                    <ul style="float:left;">
+                        <li>见习搬运工</li>
+                        <li>高级搬运工</li>
+                        <li>知名搬运工</li>
+                        <li style="margin-left:-10px;"><img src="websucai/2_jianxibanyungong.png"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="picdiv">
+                <div class="img"><img src="websucai/蓝心.png"></div>
+                <p>&nbsp;&nbsp;见习偶像</p>
+                <ul>
+                    <li> 所有自制视频总播放数>=10万</li>
+                    <li style="color:gray;"> 普通勋章</li>
+                </ul>
+                <div class="words">
+                    <ul style="float:left;">
+                        <li>&nbsp;&nbsp;见习偶像</li>
+                        <li>&nbsp;&nbsp;出道偶像</li>
+                        <li> &nbsp;&nbsp;知名偶像</li>
+                        <li style="margin-left:-10px;"><img src="websucai/2_ouxiang.png"></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+        <HR align=center width=800 color=#fae1c6 SIZE=0.1>
+        <div class="right_3">
+            <p style="margin-left: 16px;">直播系列</p>
+            <div class="picdiv">
+                <div class="img"><img src="websucai/xinrensiji.png"></div>
+                <p>&nbsp;&nbsp;新人司机</p>
+                <ul>
+                    <li> 直播等级>=15级</li>
+                    <li style="color:gray;"> 普通勋章</li>
+                </ul>
+                <div class="words">
+                    <ul style="float:left;">
+                        <li> &nbsp;&nbsp;新人司机</li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;老司机</li>
+                        <li>&nbsp;&nbsp;直播车神</li>
+                        <li style="margin-left:-10px;"><img src="websucai/2_xinrensiij.png"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="picdiv">
+                <div class="img"><img src="websucai/xueshengka.png"></div>
+                <p>&nbsp;&nbsp;学生卡</p>
+                <ul>
+                    <li> 直播用户等级>=25级</li>
+                    <li style="color:gray;"> 普通勋章</li>
+                </ul>
+                <div class="words">
+                    <ul style="float:left;">
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学生卡</li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;好人卡</li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;终身卡</li>
+                        <li style="margin-left:-10px;"><img src="websucai/2_jianxibanyungong.png"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <HR align=center width=800 color=#d98b20 SIZE=0.1>
+        <div class="right_3">
+            <p style="margin-left: 16px;">画友系列</p>
+            <div class="picdiv">
+                <div class="img"><img src="websucai/jinpaihuashi.png"></div>
+                <p>&nbsp;&nbsp;金牌画师</p>
+                <ul>
+                    <li>参与头版征集特别篇，并获得优胜奖</li>
+                    <li style="color:gray;"> 高级勋章</li>
+                </ul>
+                <div class="words">
+                    <ul style="float:left;">
+                        <li></li>
+                        <li></li>
+                        <li>"金牌"画师</li>
+                        <li style="margin-left:-10px;"><img src="websucai/2_jinpaihuashi.png"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="picdiv">
+                <div class="img"><img src="websucai/toupaihuashi.png"></div>
+                <p>&nbsp;&nbsp;头牌画师</p>
+                <ul>
+                    <li> 参与版头征集，并且获得头筹</li>
+                    <li style="color:gray;"> 稀有勋章</li>
+                </ul>
+                <div class="words">
+                    <ul style="float:left;">
+                        <li></li>
+                        <li></li>
+                        <li>"头牌"画师</li>
+                        <li style="margin-left:-10px;"><img src="websucai/2_toupaihuashi.png"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <HR align=center width=800 color=#008000 SIZE=0.1>
+        <div class="right_4">
+            <p style="margin-left: 16px;">粉丝成就系列</p>
+            <div class="picdiv">
+                <div class="img"><img src="websucai/fengjijingying.png"></div>
+                <p>&nbsp;&nbsp;收集萌新</p>
+                <ul>
+                    <li> 同时拥有粉丝徽章>=5个</li>
+                    <li style="color:gray;"> 普通勋章</li>
+                </ul>
+                <div class="words">
+                    <ul style="float:left;">
+                        <li>&nbsp;&nbsp;收集萌新</li>
+                        <li>&nbsp;&nbsp;收集达人</li>
+                        <li>大收藏家</li>
+                        <li style="margin-left:-10px;"><img src="websucai/2_shoujimengxin.png"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="picdiv">
+                <div class="img"><img src="websucai/fanquanmengxin.png"></div>
+                <p>&nbsp;&nbsp;饭圈萌新</p>
+                <ul>
+                    <li> 当前持有粉丝勋章最高等级>=5级</li>
+                    <li style="color:gray;"> 普通勋章</li>
+                </ul>
+                <div class="words">
+                    <ul style="float:left;">
+                        <li>&nbsp;&nbsp;饭圈萌新</li>
+                        <li>&nbsp;&nbsp;饭圈楷模</li>
+                        <li>&nbsp;&nbsp;饭圈大佬</li>
+                        <li style="margin-left:-10px;"><img src="websucai/2_fanquanmengxin.png"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="right_4">
+            <HR align=center width=800 color=#809ac3 SIZE=0.1>
+            <p style="margin-left: 16px;">风纪委员会系列</p>
+            <div class="picdiv">
+                <div class="img"><img src="websucai/fengjijingying.png"></div>
+                <p>&nbsp;&nbsp;风纪精英</p>
+                <ul>
+                    <li>风纪委员连任期数>=3</li>
+                    <li style="color:gray;"> 普通勋章</li>
+                </ul>
+                <div class="words">
+                    <ul style="float:left;">
+                        <li>&nbsp;&nbsp;风纪精英</li>
+                        <li>&nbsp;&nbsp;资深委员</li>
+                        <li>&nbsp;&nbsp;风纪元老</li>
+                        <li style="margin-left:-10px;"><img src="websucai/2_fengjijingying.png"></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="picdiv">
+                <div class="img"><img src="websucai/zhengyizhishi.png"></div>
+                <p>&nbsp;&nbsp;正义之士</p>
+                <ul>
+                    <li>累计仲裁数>=300</li>
+                    <li style="color:gray;"> 普通勋章</li>
+                </ul>
+                <div class="words">
+                    <ul style="float:left;">
+                        <li>&nbsp;&nbsp;正义之士</li>
+                        <li>&nbsp;&nbsp;守护之翼</li>
+                        <li>&nbsp;&nbsp;至高守护</li>
+                        <li style="margin-left:-10px;"><img src="websucai/2_zhengyizhishi.png"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

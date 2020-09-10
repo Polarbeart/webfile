@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>bilibili主页</title>
+    <style type="text/css">
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        body { font: 14px "Lato", Arial, sans-serif; min-width: 100%; min-height: 100%;  }
+        img{max-width: 100%; vertical-align: middle;max-height:100%;margin:auto;border-radius:5px;}
+        a{
+            color:black;
+            text-decoration:none;
+            transition:0.5s;
+        }
+        a:hover{
+            color:dodgerblue;
+        }
+        .content{
+            width:1130px;
+            height:2200px;
+            border:solid red 1px;
+            margin:0 auto;
+            border:none;
+        }
+        /*---------------*-----------------------part1*/
+        .carsoul{
+            width:470px;
+            height:220px;
+            border:1px red solid;
+            float:left;
+            border:none;
+
+        }
+        .carsoul img{
+            height:100%;
+            width:100%;
+        }
+        .pic1c{
+            margin-left:5px;
+            float:left;
+            width:641px;
+            height:220px;
+            border:1px red solid;
+            border:none;
+            overflow:hidden;
+
+        }
+        .pic1,.pic1_2{
+             width:185px;
+             height:105px;
+             border:1px red solid;
+            border:none;
+             float:left;
+             margin-left:20px;
+         }
+        .pic1_2{margin-top:10px;}
+
+
+        /*---------------*-----------------------part2*/
+        .pic2{
+            /*margin-top:100px;*/
+            float:left;
+            height:220px;
+            width:1120px;
+            border:1px blue solid;
+            border:none;
+
+        }
+        .pic2_1{
+            float:left;
+            margin-left:20px;
+            width:200px;
+            height:220px;
+            border:1px red solid;
+            border:none;
+        }
+        .pic2_1 p{
+
+            margin-top:20px;
+            font-size:17px;
+        }
+        /*---------------*-----------------------part3*/
+        .pic3c{
+            float:left;
+            /*margin-top:100px;*/
+            width:1120px;
+            height:400px;
+            border:1px red solid;
+            border:none;
+        }
+        .pic3c_1c{
+            float:left;
+            width:800px;
+            height:400px;
+            border:1px red solid;
+            border:none;
+
+        }
+        .pic3_img{
+            width:185px;
+            height:200px;
+            float:left;
+            margin-left:10px;
+            border:1px red solid;
+            border:none;
+            text-align: center;
+        }
+        .pic3_img img{
+            width:100%
+        }
+        .pic3c_2c{
+            margin-left:10px;
+            float:left;
+            width:300px;
+            height:370px;
+            border:1px red solid;
+            border:none;
+        }
+        .pic3c_2c img{
+
+            height:100%;
+            width:100%;
+        }
+        /*---------------*-----------------------part4*/
+        .pic4c{
+            /*margin-top:100px;*/
+            width:1120px;
+            height:500px;
+            border:1px solid blue;
+            border:none;
+            float:left;
+        }
+        .pic4c_1c{
+            width:800px;
+            height:500px;
+            float:left;
+            margin-left:10px;
+            border:1px red solid;
+            border:none;
+            text-align: center;
+        }
+        .pic4c_img{
+            width:185px;
+            height:200px;
+            float:left;
+            margin-left:10px;
+            border:1px red solid;
+            border:none;
+            text-align: center;
+        }
+        .pic4c_img img{
+            width:100%;
+        }
+        .pic4c_2c{
+            margin-left:10px;
+            float:left;
+            width:280px;
+            height:390px;
+            border:1px red solid;
+            border:none;
+        }
+
+
+        /*---------------*-----------------------part5*/
+        .fanju{
+            border:1px red solid;
+            border:none;
+            width:1000px;
+            height:40px;
+            float:left;
+            background: url(i/fanju.png) no-repeat;
+            position:relative;
+            /*border:none;*/
+        }
+        .fanju ul {
+            font-size: 14px;
+            margin-left: 9px;
+            float:left;
+            position:absolute;
+            top:8px;
+            left:90px;
+
+        }
+        .fanju ul li{
+            float:left;
+            margin-left:20px;
+            color:white;
+            list-style: none;
+
+        }
+
+        .pic5contener{
+            width:800px;
+            height:400px;
+            border:1px red solid ;
+            border:none;
+            float:left;
+            margin:10px  10px;
+            overflow:auto;
+            /*border:none;*/
+
+        }
+        .pic5{
+            width:150px;
+            height:80px;
+            border:1px red solid;
+            border:none;
+            margin-left:30px;
+            margin-top:10px;
+            float:left;
+            position: relative;
+        }
+        .pic5_content{
+            width:75px;
+            height:60px;
+            border:solid red 1px;
+            position:absolute;
+            top:0px;right:0px;
+            border:none;
+        }
+        .pic5_content a:link{
+            text-decoration: none;
+        }
+        .pic5_content a:hover{
+            text-decoration: none;
+        //background:pink;
+            color:dodgerblue;
+            border:none;
+        }
+        .paihangbang{
+            width:200px;
+            height:400px;
+            border:red 1px solid;
+            border:none;
+            /*border:none;*/
+            float:left;
+            margin-top:10px;
+            text-overflow:ellipsis;
+        }
+        .num{
+            float:left;
+        }
+        .num i{
+
+            text-align: center;
+            display:block;
+            width:16px;
+            height:16px;
+            background-color: red;
+            border:none;
+            /*position: absolute;*/
+
+        }
+        /*.paihangbang ul li{*/
+
+        /*}*/
+        .paihangbang ul li {
+
+            font-weight: bold;
+            margin-left: 35px;
+            margin-top:21px;
+            font-size:15px;
+            white-space: nowrap;
+            overflow-x:hidden;
+            text-overflow:ellipsis;
+            list-style-type: decimal;
+            position:relative;
+        }
+
+
+        .ex-title{
+            display: block;
+            font-size: 14px;
+            line-height: 20px;
+            margin: 10px 0 8px;
+            height: 40px;
+            overflow: hidden;
+            text-overflow:
+            ellipsis;  display:
+            -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient:
+            vertical;  font-weight: 500;
+            padding-right: 12px;
+        }
+
+
+        /*---------------------------------------------------------------js切换*/
+
+        .box{
+            width:300px;
+            height:200px;
+            position:relative;
+        }
+        .box-img{
+            position:absolute;
+            top:0;
+            left:0;
+            opacity:0;
+            transition:all 1.5s;
+            width: 156%;
+            height:108%;
+            /*max-height: 100%;*/
+            /*object-fit: fill;*/
+        }
+        .box-img:nth-child(1){
+            opacity:1;
+        }
+        .box-left{
+            position:absolute;
+            width:35px;
+            height:70px;
+            color:#ccc;
+            top:50px;
+            border-radius:0 5px 5px 0;
+            text-align:center;
+            line-height:70px;
+            font-size:27px;
+        }
+        .box-left:hover{
+            background-color:#00000050;
+            color:#fff;
+        }
+        .box-right{
+            position:absolute;
+            width:35px;
+            height:70px;
+            color:#ccc;
+            top:50px;
+            border-radius:0 5px 5px 0;
+            text-align:center;
+            line-height:70px;
+            font-size:27px;
+            right:-170px;
+        }
+        .box-right:hover{
+            background-color:#00000050;
+            color:#fff;
+        }
+        .box-zhiding>ul{
+            padding:0;
+            margin:0;
+            list-style:none;
+        }
+        .box-zhiding li{
+            width:14px;
+            height:14px;
+            border-radius:100%;
+            background-color:#ccc;
+            float:left;
+            margin-right:10px;
+        }
+        .box-zhiding li:hover{
+            background-color:#fff;
+        }
+        .box-zhiding li:nth-child(1){
+            background-color:#fff;
+        }
+        .box-zhiding{
+            position:absolute;
+            bottom:1px;
+            right:10px;
+        }
+        /*---------------------------------------------------------------rigth*/
+        .left{
+            width:70px;
+            height:45px;
+            border:1px gray solid ;
+            border-radius: 5px;
+            position: fixed;
+            right:30px;
+            top:60px;
+            background-color: #fafafa;
+            overflow: hidden;
+            /*border:none;*/
+        }
+        .left:hover{
+            height:800px;
+        }
+        .left ul li{
+            list-style: none;
+            /*margin-top:17px;*/
+        }
+
+        .left_li{
+            width:70px;
+            height:45px;
+            border:1px red solid;
+            text-align: center;
+            transition:width 2s;
+            -webkit-transition:width 2s;
+            line-height:45px;
+            border:none;
+
+            /*margin:0 auto;*/
+        }
+        /*.left_li :hover{*/
+        /*width:155px;*/
+        /*height:50px;*/
+
+        /*}*/
+        .left_li2{
+            width:70px;
+            height:45px;
+            border-top:1px gray solid;
+            text-align: left;
+            transition:width 2s;
+            -webkit-transition:width 2s;
+            line-height:45px;
+            /*margin:0 auto;*/
+        }
+
+        .left ul li :hover{
+            background-color:#e1e4ea;
+        }
+        .left ul li :visited{
+            background-color: #00a1d7;
+        }
+        /*---------------------------------------------------------------cssxiao*/
+        html, body {border: 0; margin: 0; padding: 0;}
+        body { font: 14px "Lato", Arial, sans-serif; min-width: 100%; min-height: 100%; color: #666; }
+        .container{margin: 0 auto; max-width: 300px;}
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        img{max-width: 100%; vertical-align: middle;}
+        .full-length{width: 100%; float: left; padding-bottom: 80px;}
+        h3{font-size: 12px;color:white;}
+        h5{margin-top: 10px;color:gray;}
+        .text-desc{position: absolute; left: 0; top: 0; background-color:gray; height: 100%; opacity: 0; width: 100%; padding: 20px;}
+        .btn{display: inline-block; padding: 3px 3px; font-size: 14px; color: #fff; border: 2px solid #4d92d9; background-color: #4d92d9; text-decoration: none; transition: 0.4s;}
+        .btn:hover{background-color: transparent; color: #4d92d9; transition: 0.4s;}
+        p{font-weight: 300; line-height: 10px; font-size: 14px; margin-bottom: 10px;}
+        .port-1{float: left; width: 100%; position: relative; overflow: hidden; text-align: center; border: 3px solid rgba(122, 123, 125, 0.9);}
+        .port-1 .text-desc{opacity: 0.8; top: -100%; transition: 0.5s; color: #000; padding: 45px 20px 20px;}
+        .port-1 img{transition: 0.5s;}
+        .port-1:hover img{transform: scale(1.2);}
+
+        .port-1.effect-1:hover .text-desc{top: 0;}
+
+        .port-1.effect-2 .text-desc{top: auto; bottom: -100%;}
+        .port-1.effect-2:hover .text-desc{bottom: 0;}
+        @media only screen and (max-width: 300px){
+            .port-1 .text-desc,
+            .port-1.effect-3:hover .text-desc,
+        }
+
+    </style>
+
+<!------------------------------------------------------js-->
+    <script type="text/javascript">
+        function showAndHidden1(){
+            var div1=document.getElementById("div1");
+            var div2=document.getElementById("div2");
+            if(div1.style.display=='block') div1.style.display='none';
+            else div1.style.display='block';
+            if(div2.style.display=='block') div2.style.display='none';
+            else div2.style.display='block';
+        }
+    </script>
+</head>
+<body>
+<div class="content">
+    <div class="left">
+        <ul>
+            <li><a href="#"><div class="left_li"><img src="i/jiantou.jpg" style="height:50%"></div></a></li>
+            <li><a href="#"><div class="left_li" style="border-top:1px solid gray;">首 &nbsp;页</div></a></li>
+            <li><a href="#"><div class="left_li">大会员</div></a></li>
+            <li><a href="#"><div class="left_li">会员积分</div></a></li>
+            <li><a href="#"><div class="left_li">我的信息</div></a></li>
+            <li><a href="#"><div class="left_li">我的头像</div></a></li>
+            <li><a href="#"><div class="left_li">我的勋章</div></a></li>
+            <li><a href="#"><div class="left_li">账号安全</div></a></li>
+            <li><a href="#"><div class="left_li">黑名单管理</div></a></li>
+            <!--<li><a href="#"><div class="left_li">我的硬币</div></a></li>-->
+            <!--<li><a href="#"><div class="left_li">我的记录</div></a></li>-->
+            <!--<li><a href="#"><div class="left_li">实名认证</div></a></li>-->
+            <!--<li><a href="#"><div class="left_li">邀请注册</div></a></li>-->
+            <li><a href="#"><div class="left_li2" style="border-top:1px solid gray;">个人空间></div></a></li>
+            <li><a href="#"><div class="left_li2" style="border-top:1px solid gray;">我的钱包></div></a></li>
+            <li><a href="#"><div class="left_li2" style="border-top:1px solid gray;">投稿管理></div></a></li>
+            <li><a href="#"><div class="left_li2" style="border-bottom:1px solid gray;">直播中心></div></a></li>
+
+
+
+
+        </ul>
+
+    </div>
+    <a href="#"><div class="carsoul">
+        <!--<img src="i/car2.jpg">-->
+        <div class="box">
+            <div class="box-img"><img src="i/carsoul1.jpg" width="300" height="200"></div>
+            <div class="box-img"><img src="i/car2.jpg" width="300" height="200"></div>
+            <div class="box-img"><img src="i/car3.jpg" height="200"></div>
+            <div class="box-img"><img src="i/car4.jpg" height="200"></div>
+            <!--<div class="box-img"><img src="websucai/car4.png" height="200"></div>-->
+            <div class="box-left">&lt;</div>
+            <div class="box-right">&gt;</div>
+            <div class="box-zhiding">
+                <ul type="padding-left:3px;">
+                    <li class="botton" ></li>
+                    <li class="botton"></li>
+                    <li class="botton"></li>
+                    <li class="botton"></li>
+                    <!--<li class="botton"></li>-->
+                    <!--<li class="botton"></li>-->
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript" src="../plugin/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                var index=0;//标记当前图片索引
+                var f;
+                dingshiqi();
+                function dingshiqi(){
+                    f=setInterval(function(){
+                        if(index==$(".box-img").length-1){
+                            index=0;
+                            $(".box-img").css("opacity","0");
+                            $(".box-img").eq(index).css("opacity","1");
+                            $(".botton").css("background-color","#ccc");
+                            $(".botton").eq(index).css("background-color","#fff");
+                        }else{
+                            index++;
+                            $(".box-img").css("opacity","0");
+                            $(".box-img").eq(index).css("opacity","1");
+                            $(".botton").css("background-color","#ccc");
+                            $(".botton").eq(index).css("background-color","#fff");
+                        }
+                    },4000)
+                }
+                $(".box-left").click(function(){
+                    clearInterval(f);
+                    if(index==0){
+                        index=$(".box-img").length-1;
+                        $(".box-img").css("opacity","0");
+                        $(".box-img").eq(index).css("opacity","1");
+                        $(".botton").css("background-color","#ccc");
+                        $(".botton").eq(index).css("background-color","#fff");
+                        dingshiqi();
+                    }
+                    else{
+                        index--;
+                        $(".box-img").css("opacity","0");
+                        $(".box-img").eq(index).css("opacity","1");
+                        $(".botton").css("background-color","#ccc");
+                        $(".botton").eq(index).css("background-color","#fff");
+                        dingshiqi();
+                    }
+                })
+                $(".box-right").click(function(){
+                    clearInterval(f);
+                    if(index==$(".box-img").length-1){
+                        index=0;
+                        $(".box-img").css("opacity","0");
+                        $(".box-img").eq(index).css("opacity","1");
+                        $(".botton").css("background-color","#ccc");
+                        $(".botton").eq(index).css("background-color","#fff");
+                        dingshiqi();
+                    }
+                    else{
+                        index++;
+                        $(".box-img").css("opacity","0");
+                        $(".box-img").eq(index).css("opacity","1");
+                        $(".botton").css("background-color","#ccc");
+                        $(".botton").eq(index).css("background-color","#fff");
+                        dingshiqi();
+                    }
+                })
+
+                $(".botton").click(function(){
+                    clearInterval(f);
+                    var indexx=$(this).index();
+                    index=indexx;
+                    $(".box-img").css("opacity","0");
+                    $(".box-img").eq(index).css("opacity","1");
+                    $(".botton").css("background-color","#ccc");
+                    $(".botton").eq(index).css("background-color","#fff");
+                    dingshiqi();
+                })
+
+            })
+        </script>
+    </div></a>
+    <input style="height:16px;width:10px;position:absolute;right:0px;top:250px;" type="button" onclick="showAndHidden1();" value=">>" />
+    <div class="pic1c">
+
+        <div1 id="div1"  style="display:block;width:641px;height:220px;float:left;">
+        <div class="pic1">
+            <!--<a href="#"><img src="i/pic1-1.jpg"></a>-->
+            <div class="full-length">
+                <div class="container">
+
+                    <div class="port-1 effect-2">
+                        <div class="image-box">
+                            <img src="i/pic1-1.jpg" alt="Image-1">
+                        </div>
+                        <div class="text-desc">
+                            <h3>刀剑神域十周年纪念</h3>
+                            <a href="#" class="btn">点击播放</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pic1">
+            <div class="full-length">
+                <div class="container">
+
+                    <div class="port-1 effect-2">
+                        <div class="image-box">
+                            <img src="i/pic1-2.jpg" alt="Image-1">
+                        </div>
+                        <div class="text-desc">
+                            <h3>腾讯法务部南山必胜客</h3>
+                            <a href="#" class="btn">点击播放</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pic1">
+            <div class="full-length">
+                <div class="container">
+
+                    <div class="port-1 effect-2">
+                        <div class="image-box">
+                            <img src="i/pic1-3.jpg" alt="Image-1">
+                        </div>
+                        <div class="text-desc">
+                            <h3>沃玛的生活</h3>
+                            <a href="#" class="btn">点击播放</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pic1_2">
+            <div class="full-length">
+                <div class="container">
+
+                    <div class="port-1 effect-2">
+                        <div class="image-box">
+                            <img src="i/pic1-4.jpg" alt="Image-1">
+                        </div>
+                        <div class="text-desc">
+                            <h3>我的哥德堡来了</h3>
+                            <a href="#" class="btn">点击播放</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pic1_2">
+            <div class="full-length">
+                <div class="container">
+
+                    <div class="port-1 effect-2">
+                        <div class="image-box">
+                            <img src="i/pic1-5.jpg" alt="Image-1">
+                        </div>
+                        <div class="text-desc">
+                            <h3>年度言和生原创曲</h3>
+                            <a href="#" class="btn">点击播放</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pic1_2">
+            <div class="full-length">
+                <div class="container">
+
+                    <div class="port-1 effect-2">
+                        <div class="image-box">
+                            <img src="i/pic1-6.jpg" alt="Image-1">
+                        </div>
+                        <div class="text-desc">
+                            <h3>言传佳作</h3>
+                            <a href="#" class="btn">点击播放</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div1>
+        <!--切换div-->
+        <div2 id="div2"  style="display:block;width:641px;height:220px;float:left;">
+            <div class="pic1">
+                <!--<a href="#"><img src="i/pic1-1.jpg"></a>-->
+                <div class="full-length">
+                    <div class="container">
+
+                        <div class="port-1 effect-2">
+                            <div class="image-box">
+                                <img src="i/pic1-1.jpg" alt="Image-1">
+                            </div>
+                            <div class="text-desc">
+                                <h3>刀剑神域十周年纪念</h3>
+                                <a href="#" class="btn">点击播放</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pic1">
+                <div class="full-length">
+                    <div class="container">
+
+                        <div class="port-1 effect-2">
+                            <div class="image-box">
+                                <img src="i/pic1-2.jpg" alt="Image-1">
+                            </div>
+                            <div class="text-desc">
+                                <h3>腾讯法务部南山必胜客</h3>
+                                <a href="#" class="btn">点击播放</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pic1">
+                <div class="full-length">
+                    <div class="container">
+
+                        <div class="port-1 effect-2">
+                            <div class="image-box">
+                                <img src="i/pic1-3.jpg" alt="Image-1">
+                            </div>
+                            <div class="text-desc">
+                                <h3>沃玛的生活</h3>
+                                <a href="#" class="btn">点击播放</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pic1_2">
+                <div class="full-length">
+                    <div class="container">
+
+                        <div class="port-1 effect-2">
+                            <div class="image-box">
+                                <img src="i/pic1-4.jpg" alt="Image-1">
+                            </div>
+                            <div class="text-desc">
+                                <h3>我的哥德堡来了</h3>
+                                <a href="#" class="btn">点击播放</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pic1_2">
+                <div class="full-length">
+                    <div class="container">
+
+                        <div class="port-1 effect-2">
+                            <div class="image-box">
+                                <img src="i/pic1-5.jpg" alt="Image-1">
+                            </div>
+                            <div class="text-desc">
+                                <h3>年度言和生原创曲</h3>
+                                <a href="#" class="btn">点击播放</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pic1_2">
+                <div class="full-length">
+                    <div class="container">
+
+                        <div class="port-1 effect-2">
+                            <div class="image-box">
+                                <img src="i/pic1-6.jpg" alt="Image-1">
+                            </div>
+                            <div class="text-desc">
+                                <h3>言传佳作</h3>
+                                <a href="#" class="btn">点击播放</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div2>
+    </div>
+    <!--part2-->
+    <img src="i/tuiguang.png" style="margin-top:60px;" ><br>
+    <div class="pic2">
+        <div class="pic2_1">
+            <a href="#"><img src="i/pic2-1.jpg"></a>
+            <a href="#"><div>
+                <p title="被摸到肚子，会浑身无力哦" class="ex-title">被摸到肚子，会浑身无力哦</p>
+                <h5><a href="#" style="color:gray;">up 万灵起源</a></h5>
+            </div></a>
+        </div>
+        <div class="pic2_1">
+            <a href="#"><img src="i/pic2-5.jpg"></a>
+            <a href="#"><div>
+                <p title="乐高新品 --买买买" class="ex-title">乐高新品 --买买买</p>
+                <h5><a href="#" style="color:gray;">up 什么都有</a></h5>
+            </div></a>
+        </div>
+        <div class="pic2_1">
+            <a href="#"><img src="i/pic2-2.jpg"></a>
+            <a href="#"><div>
+                <p title="【毕业不说再见】 | 那些青春里的日系少年们啊 / 毕业季穿搭" class="ex-title"><!---->
+                【毕业不说再见】 | 那些青春里的日系少年们啊 / 毕业季穿搭</p>
+                <h5><a href="#" style="color:gray;">up 徐八喵</a></h5>
+            </div></a>
+        </div>
+        <div class="pic2_1">
+            <a href="#"><img src="i/pic2-3.jpg"></a>
+            <a href="#"><div>
+                <p title="一姐带你游园【称王称霸】" class="ex-title"><!---->一姐带你游园【称王称霸】</p>
+                <h5><a href="#" style="color:gray;">up BiBiLiLi园长</a></h5>
+            </div></a>
+        </div>
+        <div class="pic2_1">
+            <a href="#"><img src="i/pic2-4.jpg"></a>
+            <a href="#"><div>
+                <p title="大家好，我是张天爱，B站我来了！" class="ex-title"><!---->大家好，我是张天爱，B站我来了！</p>
+                <h5><a href="#" style="color:gray;">up Crystal张天爱</a></h5>
+            </div></a>
+
+        </div>
+
+    </div>
+
+
+
+    <img src="i/zhibo.png" style="margin-top:60px;">
+    <div class="pic3c">
+        <div class="pic3c_1c">
+            <div class="pic3_img"><a href="#"><img src="i/pic3-1.webp"></a>
+                <a href="#"><div>
+                    <p title="国服第一女亚索高端局亚索教学" class="ex-title">国服第一女亚索高端局<br>亚索教学</p>
+                    <h5><a href="#" style="color:gray;">英雄联盟</a></h5>
+
+                </div></a>
+            </div>
+            <div class="pic3_img"><a href="#"><img src="i/pic3-2.webp"></a>
+                <a href="#"><div>
+                    <p title="看我经久不衰的剪刀手" class="ex-title">看我经久不衰的剪刀手</p>
+                    <h5><a href="#" style="color:gray;">可爱生活</a></h5>
+                </div></a>
+            </div>
+            <div class="pic3_img"><a href="#"><img src="i/pic3-3.webp"></a>
+                <a href="#"><div>
+                    <p title="预约新游，你造吗？" class="ex-title">预约新游，你造吗？</p>
+                    <h5><a href="#" style="color:gray;">新游预约</a></h5>
+                </div></a>
+            </div>
+            <div class="pic3_img"><a href="#"><img src="i/pic3-4.webp"></a>
+                <a href="#"><div>
+                    <p title="人生苦短，我用python" class="ex-title">人生苦短，我用python</p>
+                    <h5><a href="#" style="color:gray;">编程语言</a></h5>
+                </div></a>
+            </div>
+            <div class="pic3_img"><a href="#"><img src="i/pic3-5.webp"></a>
+                <a href="#"><div>
+                    <p title="小姐姐教你弹古筝" class="ex-title">小姐姐教你弹古筝</p>
+                    <h5><a href="#" style="color:gray;">自学才艺</a></h5>
+                </div></a>
+            </div>
+            <div class="pic3_img"><a href="#"><img src="i/pic3-6.webp"></a>
+                <a href="#"><div>
+                    <p title="一起来看熊改改" class="ex-title">一起来看熊改改</p>
+                    <h5><a href="#" style="color:gray;">最新动画</a></h5>
+                </div></a>
+            </div>
+            <div class="pic3_img"><a href="#"><img src="i/pic3-7.webp"></a>
+                <a href="#"><div>
+                    <p title="斯人若彩虹，遇上方知有" class="ex-title">斯人若彩虹<br>遇上方知有</p>
+                    <h5><a href="#" style="color:gray;">英雄联盟</a></h5>
+                </div></a>
+            </div>
+            <div class="pic3_img"><a href="#"><img src="i/pic3-8.webp"></a>
+                <a href="#"><div>
+                    <p title="国服第一女亚索高端局亚索教学" class="ex-title">国服第一女亚索高端局<br>亚索教学</p>
+                    <h5><a href="#" style="color:gray;">英雄联盟</a></h5>
+                </div></a>
+            </div>
+
+        </div>
+        <div class="pic3c_2c"><a href="#"><img src="i/pic3-12.webp"></a>
+
+        </div>
+    </div>
+
+
+
+
+
+    <div><img src="i/donghua.png" style="margin-top:60px ;"></div>
+     <div class="pic4c">
+         <!--<img src="i/donghua.png" style="margin-top:-160px;margin-left:0px;">-->
+         <div class="pic4c_1c">
+             <div class="pic4c_img"><a href="#"><img src="i/pic4-1.webp"></a>
+                <div style="text-align: left; font-size: 17px;" >
+                    <a title="【爆肝动画】W初到罗德岛的故事" class="title" >【爆肝动画】W初到罗德岛的故事</a>
+                </div>
+             </div>
+             <div class="pic4c_img"><a href="#"><img src="i/pic4-2.webp"></a>
+                 <div style="text-align: left; font-size: 17px;" >
+                 <a title="【剑网3指尖江湖】剑观平生【手书】" class="title" >【剑网3指尖江湖】剑观平生【手书】</a>
+                 </div>
+             </div>
+             <div class="pic4c_img"><a href="#"><img src="i/pic4-3.webp"></a>
+                 <div style="text-align: left; font-size: 17px;" >
+                     <a title="【动态壁纸】少女前线UMP45 感受下暴风雪烂漫吧~" class="title" >【动态壁纸】少女前线UMP45 感受下暴风雪烂漫吧~</a>
+                 </div>
+             </div>
+             <div class="pic4c_img"><a href="#"><img src="i/pic4-4.webp"></a>
+                 <div style="text-align: left; font-size: 17px;" >
+                     <a title="强吻能忍，拉丝就有点过分了" class="title">强吻能忍，拉丝就有点过分了</a>
+                 </div>
+             </div>
+             <div class="pic4c_img"><a href="#"><img src="i/pic4-5.webp"></a>
+                 <div style="text-align: left; font-size: 17px;" >
+                     <a title="假如火影忍者开始玩拍一拍" class="title">假如火影忍者开始玩拍一拍</a>
+                 </div>
+             </div>
+             <div class="pic4c_img"><a href="#"><img src="i/pic4-6.webp"></a>
+                 <div style="text-align: left; font-size: 17px;" >
+                     <a title="【配音】看完之后，你还喜欢富婆吗？" class="title">【配音】看完之后，你还喜欢富婆吗？</a>
+                 </div>
+             </div>
+             <div class="pic4c_img"><a href="#"><img src="i/pic4-7.webp"></a>
+                 <div style="text-align: left; font-size: 17px;" >
+                     <a title="【实力至上主义的教室/二年生篇】第8期：kiss" class="title">【实力至上主义的教室/二年生篇】第8期：kiss</a>
+                 </div>
+             </div>
+             <div class="pic4c_img"><a href="#"><img src="i/pic4-8.webp"></a>
+                 <div style="text-align: left; font-size: 17px;" >
+                     <a title="明日方舟同人原创动画PV【晨昏交界】" class="title">明日方舟同人原创动画PV【晨昏交界】</a>
+                 </div>
+             </div>
+         </div>
+         <div class="pic4c_2c">
+             <div class="pic3c_2c" style="margin-left: -10px;"><a href="#"><img src="i/pic3-11.webp"></a>
+         </div>
+     </div>
+
+
+
+    <div class="fanju">
+        <p style="font-size: 23px;font-weight: 500;margin-left: 40px;margin-top:10px;"><a>番剧</a></p>
+        <ul>
+            <li><a>最新</a></li>
+            <li><a>周一</a></li>
+            <li><a>周二</a></li>
+            <li><a>周三</a></li>
+            <li><a>周四</a></li>
+            <li><a>周五</a></li>
+            <li><a>周六</a></li>
+            <li><a>周末</a></li>
+
+        </ul>
+        <div style="width:100px;height:26px; border:1px deepskyblue solid;position:absolute;top:10px;right:180px;">
+            <h4><a href="#">新番时间表》</a></h4>
+        </div>
+        <h2 style="position: absolute;right:80px;top:8px;">排行榜</h2>
+    </div>
+    <div class="pic5contener">
+        <div class="pic5"><a href="#"><img src="i/pic3_1.png"></a>
+            <div class="pic5_content"><a href="#">宝可梦GO</a><br><br>
+                <a href="#"><span>第134话</span></a>
+            </div>
+        </div>
+        <div class="pic5"><a href="#"><img src="i/pic3_2.png"></a>
+            <div class="pic5_content"><a href="#">妙蛙种子</a><br><br>
+                <a href="#"><span>第134话</span></a>
+            </div>
+        </div>
+        <div class="pic5"><a href="#"><img src="i/pic3_3.png"></a>
+            <div class="pic5_content"><a href="#">喷火龙</a><br><br>
+                <a href="#"><span>第134话</span></a>
+            </div>
+        </div>
+        <div class="pic5"><a href="#"><img src="i/pic3_4.png"></a>
+            <div class="pic5_content"><a href="#">地球上投</a><br><br>
+                <a href="#"><span>第134话</span></a>
+            </div>
+        </div>
+        <div class="pic5"><a href="#"><img src="i/pic3_5.png"></a>
+            <div class="pic5_content"><a href="#">喷射火焰</a><br><br>
+                <a href="#"><span>第134话</span></a>
+            </div>
+        </div>
+        <div class="pic5"><a href="#"><img src="i/pic3_6.png"></a>
+            <div class="pic5_content"><a href="#">巨钳蟹</a><br><br>
+                <a href="#"><span>第134话</span></a>
+            </div>
+        </div>
+        <div class="pic5"><a href="#"><img src="i/pic3_7.png"></a>
+            <div class="pic5_content"><a href="#">Poken GO</a><br><br>
+                <a href="#"><span>第134话</span></a>
+            </div>
+        </div>
+        <div class="pic5"><a href="#"><img src="i/pic3_8.png"></a>
+            <div class="pic5_content"><a href="#">神奇宝贝</a><br><br>
+                <a href="#"><span>第134话</span></a>
+            </div>
+        </div>
+        <div class="pic5"><a href="#"><img src="i/pic3_9.png"></a>
+            <div class="pic5_content"><a href="#">皮卡丘</a><br><br>
+                <a href="#"><span>第134话</span></a>
+            </div>
+        </div>
+        <div class="pic5"><a href="#"><img src="i/pic3_10.png"></a>
+            <div class="pic5_content"><a href="#">铁甲螳螂</a><br><br>
+                <a href="#"><span>第134话</span></a>
+            </div>
+        </div>
+        <div class="pic5"><a href="#"><img src="i/pic3_11.png"></a>
+            <div class="pic5_content"><a href="#">剑舞</a><br><br>
+                <a href="#"><span>第134话</span></a>
+            </div>
+        </div>
+        <div class="pic5"><a href="#"><img src="i/pic3_12.png"></a>
+            <div class="pic5_content"><a href="#">闪电鸟</a><br><br>
+                <a href="#"><span>第134话</span></a>
+            </div>
+        </div>
+        <div class="pic5"><a href="#"><img src="i/pic3_13.png"></a>
+            <div class="pic5_content"><a href="#">宝可梦GO</a><br><br>
+                <a href="#"><span>第134话</span></a>
+            </div>
+        </div>
+        <div class="pic5"><a href="#"><img src="i/pic3_14.png"></a>
+            <div class="pic5_content"><a href="#">宝可梦GO</a><br><br>
+                <a href="#"><span>第134话</span></a>
+            </div>
+        </div>
+        <div class="pic5"><a href="#"><img src="i/pic3_15.png"></a>
+            <div class="pic5_content"><a href="#">宝可梦GO</a><br><br>
+                <a href="#"><span>第134话</span></a>
+            </div>
+        </div>
+        <div class="pic5"><a href="#"><img src="i/pic3_1.png"></a>
+            <div class="pic5_content"><a href="#">宝可梦GO</a><br><br>
+                <a href="#"><span>第134话</span></a>
+            </div>
+        </div>
+        <div class="pic5"><a href="#"><img src="i/pic3_16.png"></a>
+            <div class="pic5_content"><a href="#">宝可梦GO</a><br><br>
+                <a href="#"><span>第134话</span></a>
+            </div>
+        </div>
+        <div class="pic5"><a href="#"><img src="i/pic3_5.png"></a>
+            <div class="pic5_content"><a href="#">宝可梦GO</a><br><br>
+                <a href="#"><span>第134话</span></a>
+            </div>
+        </div>
+        <div class="pic5"><a href="#"><img src="i/pic3_1.png"></a>
+            <div class="pic5_content"><a href="#">宝可梦GO</a><br><br>
+                <a href="#"><span>第134话</span></a>
+            </div>
+        </div>
+        <div class="pic5"><a href="#"><img src="i/pic3_2.png"></a>
+            <div class="pic5_content"><a href="#">宝可梦GO</a><br><br>
+                <a href="#"><span>第134话</span></a>
+            </div>
+        </div>
+        <div class="pic5"><a href="#"><img src="i/pic3_3.png"></a>
+            <div class="pic5_content"><a href="#">宝可梦GO</a><br><br>
+                <a href="#"><span>第134话</span></a>
+            </div>
+        </div>
+        <div class="pic5"><a href="#"><img src="i/pic3_4.png"></a>
+            <div class="pic5_content"><a href="#">宝可梦GO</a><br><br>
+                <a href="#"><span>第134话</span></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="paihangbang">
+        <ul style="font-size: 11px;">
+            <li class="num" style="margin-bottom: 5px;">
+                <i>1</i>
+                <img src="i/tu1.jpg">
+                <a href="#">最强汤姆</a>
+            </li><br><br><br><br><br><br><br><br>
+            <li><a href="#"><i>2</i>&nbsp;&nbsp;别说马赛克了</a></li>
+            <li><a href="#"><i >3</i>&nbsp;&nbsp;藏得太深了！</a></li>
+            <li><a href="#"><i>4</i>&nbsp;&nbsp;对不起，我败了！</a></li>
+            <li><a href="#"><i>5</i>&nbsp;&nbsp;业界真的要完！</a></li>
+            <li><a href="#"><i>6</i>&nbsp;&nbsp;【warma】怎么版！</a></li>
+            <li><a href="#"><i>7</i>&nbsp;&nbsp;小破站11周年庆</a></li>
+            <li><a href="#"><i>8</i>&nbsp;&nbsp;这么大是个奇迹</a></li>
+
+        </ul>
+
+    </div>
+</div>
+
+</body>
+</html>

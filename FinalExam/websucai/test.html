@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html><head>
+    <style>.a { background:url(web) }.b { background:#0F0; }
+</style>
+    <script>
+    var i = 0;function change()
+    {
+        if (i) {
+            document.getElementById("btn").className="a"; i=0;
+        } else{
+            document.getElementById("btn").className="b";  i=1; }}
+    </script></head>
+<body>
+<input id="btn" type="button" class="a" value="click me" onClick="change()">
+</body></html>

@@ -1,0 +1,21 @@
+.top{
+    height:100px;
+    width:1350px;
+    border:1px red solid;
+    position:absolute;
+    background: url("../websucai/top.png");
+    z-index: 9999;
+    margin:0 auto;
+    border:none;
+}
+.top ul li{
+    margin-left:30px;
+}
+.top ul li a:link{
+
+    color:white;
+    text-decoration: none;
+}
+.top ul li a:hover{
+    color:skyblue;
+}

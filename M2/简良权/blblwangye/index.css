@@ -1,0 +1,785 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration:none ;
+}
+ol,ul{
+    list-style: none;
+}
+body{
+    display: block;
+    margin: 8px;
+}
+.header{
+    width: 2080px;
+    height: 100px;
+ }
+.header ul li{
+    float: left;
+    margin-left: 90px;
+    margin-top: 30px;
+}
+.header ul li:first-child{
+    margin-left:25px ;
+    margin-top: 30px;
+}
+.header ul li.on a{
+    color: #00a1d6;
+}
+.header ul li a{
+    font-size: 28px;
+    color: #6d757a;
+}
+.header ul li a:hover{
+    color: #00a1d6;
+}
+
+.biaoqian{
+    width: 2080px;
+    height: 280px;
+}
+.biaoqian .remen{
+    width: 2080px;
+    height: 100px;
+}
+.xuanze{
+    float:left;
+    width: 2080px;
+    height: 180px;
+
+}
+li.xiaobiaoqian{
+    float: left;
+    position: relative;
+    border: 2px solid #e5e9ef;
+    border-radius: 12px;
+    margin: 30px 33px 0px 20px;
+}
+li.two{
+    background-color: #00a1d6!important;
+    color: #ffffff!important;
+    border-color: #00a1d6!important;
+    float: left;
+    position: relative;
+    border: 2px solid #e5e9ef;
+    border-radius: 12px;
+    margin: 30px 33px 0px 20px;
+}
+.xbq{
+    line-height: 40px;
+    padding: 0 10px;
+    color:#222;
+    font-size: 26px;
+
+ }
+a.one{
+    line-height: 40px;
+    padding: 0 10px;
+    color:#ffffff;
+    font-size: 26px;
+}
+a.xbq:hover{
+    color: #00a1d6;
+    border: 2px solid #00a1d6;
+    border-radius: 12px;
+}
+
+a.one:hover{
+    color:#ffffff;
+    border: 2px solid #00a1d6;
+    border-radius: 12px;
+}
+
+
+.biaoqian2{
+    width: 2080px;
+    height: 100px;
+}
+.p2{
+    width: 200px;
+    float: left;
+    font-size: 40px;
+    padding-top: 20px;
+}
+.p1{
+    width: 82px;
+    float: left;
+    padding-top:10px;
+    padding-left: 10px;
+}
+.p1.img{
+
+    height: 60px;
+}
+.p3{
+    width: 200px;
+    float: left;
+    padding-top: 43px;
+    color: #99a2aa;
+    font-size: 20px;
+}
+.p13{
+    width: 200px;
+    float: right;
+    font-size: 40px;
+    padding-top: 20px;
+    margin-right: 340px;
+}
+
+.tuhua{
+    height: 2400px;
+    width: 2080px;
+}
+
+.tuhua2{
+    height: 2400px;
+    width: 1600px;
+    float: left;
+}
+.tuhua2 img{
+    width: 350px;
+    height: 215px;
+}
+.tuhua3{
+    height: 300px;
+    width: 1600px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.tuhua3li1{
+    height: 300px;
+    width: 395px;
+    float: left;
+    overflow: hidden;
+}
+
+.tu1:hover::before {
+    content: "24:70";
+    z-index: 1;
+    position: absolute;
+    top: 690px;
+    left: 520px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+
+.tu2:hover::before {
+    content: "7:10";
+    z-index: 1;
+    position: absolute;
+    top: 690px;
+    left: 915px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+.tu3:hover::before {
+    content: "20:15";
+    z-index: 1;
+    position: absolute;
+    top: 690px;
+    left: 1315px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+.tu4:hover::before {
+    content: "20:20";
+    z-index: 1;
+    position: absolute;
+    top: 690px;
+    left: 1715px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+.tu5:hover::before {
+    content: "12:10";
+    z-index: 1;
+    position: absolute;
+    top: 1120px;
+    left: 520px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+.tu6:hover::before {
+    content: "14:10";
+    z-index: 1;
+    position: absolute;
+    top: 1120px;
+    left: 915px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+.tu7:hover::before {
+    content: "20:50";
+    z-index: 1;
+    position: absolute;
+    top:1120px;
+    left: 1315px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+.tu8:hover::before {
+    content: "20:50";
+    z-index: 1;
+    position: absolute;
+    top:1120px;
+    left: 1715px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+.tu9:hover::before {
+    content: "25:10";
+    z-index: 1;
+    position: absolute;
+    top: 1470px;
+    left: 520px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+.tu10:hover::before {
+    content: "27:01";
+    z-index: 1;
+    position: absolute;
+    top: 1470px;
+    left: 915px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+.tu11:hover::before {
+    content: "22:11";
+    z-index: 1;
+    position: absolute;
+    top: 1470px;
+    left: 1315px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+.tu12:hover::before {
+    content: "28:15";
+    z-index: 1;
+    position: absolute;
+    top: 1570px;
+    left: 1715px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+.tu13:hover::before {
+    content: "25:05";
+    z-index: 1;
+    position: absolute;
+    top: 1810px;
+    left: 520px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+.tu14:hover::before {
+    content: "20:10";
+    z-index: 1;
+    position: absolute;
+    top: 1810px;
+    left: 915px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+.tu15:hover::before {
+    content: "2:10";
+    z-index: 1;
+    position: absolute;
+    top: 1810px;
+    left: 1315px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+.tu16:hover::before {
+    content: "8:10";
+    z-index: 1;
+    position: absolute;
+    top: 1810px;
+    left: 1715px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+
+.tu17:hover::before {
+    content: "10:18";
+    z-index: 1;
+    position: absolute;
+    top: 2160px;
+    left: 520px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+.tu18:hover::before {
+    content: "45:10";
+    z-index: 1;
+    position: absolute;
+    top: 2160px;
+    left: 915px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+.tu19:hover::before {
+    content: "20:55";
+    z-index: 1;
+    position: absolute;
+    top: 2160px;
+    left: 1315px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+.tu20:hover::before {
+    content: "30:10";
+    z-index: 1;
+    position: absolute;
+    top: 2160px;
+    left: 1715px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+.tu21:hover::before {
+    content: "20:10";
+    z-index: 1;
+    position: absolute;
+    top: 2500px;
+    left: 520px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+.tu22:hover::before {
+    content: "10:20";
+    z-index: 1;
+    position: absolute;
+    top: 2500px;
+    left: 915px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+.tu23:hover::before {
+    content: "9:10";
+    z-index: 1;
+    position: absolute;
+    top: 2500px;
+    left: 1315px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+.tu24:hover::before {
+    content: "22:12";
+    z-index: 1;
+    position: absolute;
+    top: 2500px;
+    left: 1715px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+.p6{
+    width: 360px;
+    height: 220px;
+}
+.tu{
+    width: 350px;
+    height: 215px;
+}
+.bianhua{
+    width: 350px;
+    height: 54px;
+    overflow: hidden;
+}
+.p7{
+    width: 350px;
+    margin-top: 10px;
+}
+.p7 img{
+    width: 30px;
+    height: 35px;
+    float: left;
+}
+.p8{
+    width: 360px;
+    font-size: 21px;
+    height: 25px;
+    overflow: hidden;
+    transition: height .3s;
+}
+.p8:hover  {
+    height: 80px;
+    color: #00a1d6;
+}
+.p9{
+    width: 60px;
+    height: 35px;
+    float: left;
+    margin-left: 8px;
+    color: #6d757a;
+}
+.p10{
+    width: 30px;
+    height: 35px;
+    float: left;
+    margin-left: 55px;
+    margin-top: 2.5px;
+}
+.p10 img{
+    width: 30px;
+    height: 28px;
+    float: left;
+}
+.p11{
+    width: 30px;
+    height: 35px;
+    float: left;
+    margin-left: 8px;
+    color: #6d757a;
+}
+
+
+.tuhua3li1.img{
+    width: 380px;
+    margin-top: 2500000px;
+
+}
+.tuhua3li2{
+    height: 300px;
+    width: 395px;
+    float: left;
+}
+
+.tuhua3li3{
+    height: 300px;
+    width: 395px;
+    float: left;
+}
+.tuhua3li4{
+    height: 300px;
+    width: 400px;
+    float: left;
+}
+.tuhua4{
+    height: 2060px;
+    width: 1600px;
+    float: left;
+}
+.tuhua14{
+    width: 1600px;
+    height: 100px;
+    margin-top: 50px;
+}
+.tuhua141{
+    width: 796px;
+    height: 100px;
+    float: left;
+}
+.tuhua141 ul {
+    display: inline-block;
+    float: left;
+    margin-top: 14px;
+    margin-left: 10px;
+}
+.tuhua141 ul .ye {
+    display: inline-block;
+    vertical-align: middle;
+}
+.tuhua141 ul .shu {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    font-size: 30px;
+    margin: 0 2px;
+    padding: 0 13px;
+    display: block;
+    height: 70px;
+    width: 75px;
+}
+.tuhua141 ul .shu:hover {
+    background: #00a1d6;
+    color: #ffffff;
+    border: 1px solid #00a1d6;
+}
+
+.tuhua141 ul .shu1 {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    font-size: 30px;
+    margin: 0 2px;
+    padding: 0 13px;
+    display: block;
+    height: 70px;
+    background: #00a1d6;
+    color: #ffffff;
+    width: 75px;
+}
+.tuhua141 ul .shu2{
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    font-size: 30px;
+    margin: 0 2px;
+    padding: 0 13px;
+    display: block;
+    height: 70px;
+    width: 130px;
+}
+.tuhua141 ul .shu2:hover{
+    background: #00a1d6;
+    color: #ffffff;
+}
+.tuhua141 ul .shu3{
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    font-size: 30px;
+    margin: 0 2px;
+    padding: 0 13px;
+    display: block;
+    height: 70px;
+    width: 130px;
+}
+.tuhua141 ul .shu3:hover{
+    background: #00a1d6;
+    color: #ffffff;
+}
+
+.tuhua142{
+    width: 800px;
+    height: 100px;
+    float: right;
+    font-size: 23px;
+    color: #99a2aa;
+    padding-top: 36px;
+}
+.kuangkuang{
+    width: 100px;
+    height: 36px;
+    margin: 0 5px;
+    border: 1px solid #ccd0d7;
+    border-radius:4px;
+}
+.tuhua5{
+    height: 2400px;
+    width: 470px;
+    float: right;
+}
+.tuhua12{
+    width: 470px;
+    height: 500px;
+}
+.box{
+    height: 470px;
+    width: 470px;
+    position:relative;
+}
+.box-img{
+    width: 470px;
+    height: 470px;
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0;
+    transition:all 1.5s;
+}
+.box-img:nth-child(1){
+    opacity: 1;
+}
+.tuhua13{
+    width: 470px;
+    height: 1424px;
+}
+.tuhua13 ul li {
+}
+
+.paixu{
+    width: 40px;
+    margin-bottom: 70px;
+    margin-left: 10px;
+    float: left;
+}
+.xiaotu{
+
+}
+.paiming{
+    margin: 20px 0;
+}
+.p12{
+    width: 220px;
+    height: 113px;
+    float: right;
+    font-size: 21.4px;
+    padding-top: 5px;
+}
+.p12:hover{
+    color: #00a1d6;
+ }
+.span1{
+    float: left;
+    margin-top: 20px;
+    width: 150px;
+    color: #6d757a;
+}
+.span2{
+    float: left;
+    width: 150px;
+    color: #6d757a;
+}
+.tuhua15{
+    width: 470px;
+    height: 450px;
+    margin-top: 20px;
+}
+.tuhua6{
+    height: 100px;
+    width: 1600px;
+}
+.p4{
+    height: 50px;
+    width: 300px;
+    float: right;
+    padding-top: 40px;
+    font-size: 21px;
+    margin-right: 27px;
+
+}
+.p5{
+     height: 50px;
+     width: 370px;
+     float: right;
+    padding-top: 40px;
+    font-size: 21px;
+}
+
+
+.tuhua7{
+    height: 300px;
+    width: 1600px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.tuhua7li1{
+    height: 300px;
+    width: 395px;
+    float: left;
+}
+.tuhua7li2{
+    height: 300px;
+    width: 395px;
+    float: left;
+}
+.tuhua7li3{
+    height: 300px;
+    width: 395px;
+    float: left;
+}
+.tuhua7li4{
+    height: 300px;
+    width: 400px;
+    float: left;
+}
+.tuhua8{
+    height: 300px;
+    width: 1600px;
+    margin-top: 45px;
+    overflow: hidden;
+}
+.tuhua8li1{
+    height: 300px;
+    width: 395px;
+    float: left;
+}
+.tuhua8li2{
+    height: 300px;
+    width: 395px;
+    float: left;
+}
+.tuhua8li3{
+    height: 300px;
+    width: 395px;
+    float: left;
+}
+.tuhua8li4{
+    height: 300px;
+    width: 400px;
+    float: left;
+}
+.tuhua9{
+    height: 300px;
+    width: 1600px;
+    margin-top: 45px;
+    overflow: hidden;
+}
+.tuhua9li1{
+    height: 300px;
+    width: 395px;
+    float: left;
+}
+.tuhua9li2{
+    height: 300px;
+    width: 395px;
+    float: left;
+}
+.tuhua9li3{
+    height: 300px;
+    width: 395px;
+    float: left;
+}
+.tuhua9li4{
+    height: 300px;
+    width: 400px;
+    float: left;
+}
+
+.tuhua10{
+    height: 300px;
+    width: 1600px;
+    margin-top: 45px;
+    overflow: hidden;
+}
+.tuhua10li1{
+    height: 300px;
+    width: 395px;
+    float: left;
+}
+.tuhua10li2{
+    height: 300px;
+    width: 395px;
+    float: left;
+}
+.tuhua10li3{
+    height: 300px;
+    width: 395px;
+    float: left;
+}
+.tuhua10li4{
+    height: 300px;
+    width: 400px;
+    float: left;
+}
+
+.tuhua11{
+    height: 300px;
+    width: 1600px;
+    margin-top: 45px;
+    overflow: hidden;
+}
+
+.tuhua11li1{
+    height: 300px;
+    width: 395px;
+    float: left;
+}
+.tuhua11li2{
+    height: 300px;
+    width: 395px;
+    float: left;
+}
+.tuhua11li3{
+    height: 300px;
+    width: 395px;
+    float: left;
+}
+.tuhua11li4{
+    height: 300px;
+    width: 400px;
+    float: left;
+}
+
+
+
+
+

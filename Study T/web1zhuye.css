@@ -1,0 +1,102 @@
+
+.sititle{
+    width:300px;
+    height:45px;
+    border:red solid 1px;
+    border:none;
+    position:absolute;
+    background:url(i3/hlist_title_h3.png) no-repeat;
+
+}
+.sititle a{
+    display:block;
+    height:45px;
+    width:173px;
+}
+
+.more{
+    width:48px;height:21px;
+    background:url(i3/hlist_title_more.gif);
+    position:absolute;right:0px;bottom:8px;
+    border:1px red solid;
+    border:none;
+}
+.more a:link{
+    color:gray;
+    text-decoration: none;
+}
+.more a:hover{
+    color:red;
+    background:url("i3/hlist_title_more.gif") no-repeat;
+    background-position: 0px -22px;
+}
+.decoration{
+    width:300px;
+    height:110px;
+    border:red solid 1px;
+    border:none;
+    position:absolute;
+}
+.redline{
+    background:url(i3/hlist_title_bg.gif);
+    width:300px;height:5px;
+    position:absolute;
+    top:0px;left:0px;
+}
+.imgborder{
+    width:82px;height:90px;
+    border:1px black solid;
+    position:absolute;
+    left:0px;
+    top:15px;
+    text-align: center;
+//padding-top:2px;
+}
+.imgborder a:hover{
+    display:block;
+    width:82px;
+    hright:90px;
+    border:red 1px solid;
+}
+.imgborder  a{
+    border:none;
+}
+.liebiao {
+    height:97px;
+    width:210px;
+    border:red 1px solid;
+    border:none;
+    position:absolute;
+    left:85px;
+    top:14px;
+    font-size:15px;
+    /*overflow:hidden;
+    text-overflow:ellipsis;*/
+}
+.liebio ul{
+    white-space: nowrap;
+    display:inline-block;
+    padding-left:0px;
+    list-style:none;  /*È¥µô·ûºÅ*/
+}
+.liebiao ul li{
+    padding-left:10px;
+    text-overflow:ellipsis;
+    overflow:hidden ;
+    white-space: nowrap;
+}
+.liebiao ul li a:link{
+    background-image: url(i3/icons.png);  /*²åÈëÁÐ±í·ûºÅ*/
+    background-position:0px 0px ;   /*·ûºÅ¶¨Î»*/
+    background-repeat: no-repeat;
+    background-size:20px;   /*·ûºÅsize*/
+    color:black;
+    text-decoration:none;
+}
+.liebiao ul li a:hover{
+    background:url(i3/icons.png) no-repeat ;
+    background-position:0px -30px;
+    background-size:20px;
+    color:red;
+// text-decoration: underline;
+}

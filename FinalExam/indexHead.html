@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+  <style type="text/css">
+    *{
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    a{
+      color: black;
+      transition:color .2s;
+    }
+    a:hover{
+      color: #00a1d6;
+    }
+    /*
+      -----------------------------------------------------------index
+    */
+    div.index{
+      overflow: hidden;
+      width: 100%;
+      background-image: url("images/22650682fd25a4a5aa96dd9ef53190c6b8d54912.png");
+      background-size: 1550px 155px;
+      height: 150px;
+      position: relative;
+    }
+    div.index::before{
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      opacity: 0.2;
+      position: absolute;
+    }
+    div.index ul{
+      overflow: hidden;
+      height: 50px;
+      padding: 0 0 0 20px;
+      margin: 0 0 30px 0;
+    }
+    div.index ul li{
+      overflow: hidden;
+      float: left;
+      margin: 0 15px 0 5px;
+    }
+    div.index ul li a{
+      line-height: 50px;
+      color: #FFFFFF;
+      position: relative;
+    }
+    div.index ul li a span{
+      font-size: 30px;
+      font-weight: bold;
+      color: #00a1d6;
+      margin: 0 10px 0 0;
+    }
+    div.index ul li .bml{
+      overflow: hidden;
+    }
+    div.index ul li a.bml span{
+      font-size: 20px;
+      color: #FFFFFF;
+      transition: all .5s;
+    }
+    div.index ul li a.bml img{
+      position: absolute;
+      width: 70px;
+      top: -18px;
+      left: -14px;
+      transition: all .5s;
+      opacity: 0;
+    }
+    div.index ul li input{
+      width: 180px;
+      font-size: 12px;
+      line-height: 25px;
+      border: solid 1px #e5e9ef;
+    }
+    div.index ul li div{
+      width: 40px;
+      height: 27px;
+      background-color: #e5e9ef;
+      background-image: url("images/icons.png");
+      background-position: -785px -723px;
+      float: right;
+      margin: 12px 0 0 0;
+      border-radius: 0 10px 10px 0;
+    }
+    div.index ul li.souSuo:hover input{
+      border: solid 1px #ff85ad;
+    }
+    div.index ul li.souSuo:hover div{
+      background-color: #ff85ad;
+      background-position: -657px -723px;
+    }
+    #touGao{
+      background-color: #ff85ad;
+      height: 36px;
+      width: 100px;
+      border-radius: 2px;
+      margin: 10px 0 0 0;
+      text-align:center;
+    }
+    #touGao a {
+      line-height: 36px;
+      color: #FFFFFF;
+    }
+    /*
+    ------------------------------------------------------导航
+    */
+    .daHang{
+      margin: auto;
+      width: 1160px;
+    }
+    .daHang ul{
+      float: left;
+    }
+    .daHang ul li{
+      float: left;
+    }
+    .daHang .one li{
+      width: 50px;
+      text-align: center;
+    }
+    .daHang .two{
+      margin: 0 0 0 20px;
+    }
+    .daHang .two li{
+      margin: 10px 20px 0 0;
+    }
+    .daHang .two li a i{
+      display: inline-block;
+      width: 25px;
+      text-align: center;
+      font-size: 12px;
+      background-color: #73c9e5;
+      color: #FFFFFF;
+      border-radius: 2px;
+      margin: 0 0 0 3px;
+    }
+  </style>
+</head>
+<body>
+<div class="index">
+  <ul>
+    <li><a href="熊万林/index.html" target="if"><span>bilibili</span>主站<i></i></a></li>
+    <li><a href="#">番剧</a></li>
+    <li><a href="#">游戏中心</a></li>
+    <li><a href="#">直播</a></li>
+    <li><a href="#">会员购</a></li>
+    <li><a href="#">漫画</a></li>
+    <li><a href="#">会员购</a></li>
+    <li><a href="#">赛事</a></li>
+    <li><a class="bml" href="#"><span id="BML">BML</span><img id="BML2" src="images/ab040df590b2bd08ad74f8753e4f853d80e83d45.png"></a></li>
+    <script type="text/javascript" src="jq.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        var index=0;
+        setInterval(function(){
+          if(index==0){
+            $("#BML").css("opacity","0");
+            $(".bml img").css("opacity","1");
+            index=1;
+          }else{
+            $(".bml img").css("opacity","0");
+            $("#BML").css("opacity","1");
+            index=0;
+          }
+        },5000)
+      })
+    </script>
+    <li><a href="#"><i></i>下载app</a></li>
+    <li class="souSuo"><a href="#"><form action = "#"><input type="text"><div></div></form></a></li>
+    <li><a href="#">img</a></li>
+    <li><a href="#">大会员</a></li>
+    <li><a href="#">消息</a></li>
+    <li><a href="#">动态</a></li>
+    <li><a href="#">收藏</a></li>
+    <li><a href="#">历史</a></li>
+    <li><a href="#">创作中心</a></li>
+    <li id="touGao"><a href="siPing.html" target="if">投稿</a></li>
+  </ul>
+</div>
+<div class="daHang">
+  <ul class="one">
+    <li><img src="images/title_pic1.png"><span>首页</span></li>
+    <li><img src="images/title_pic1.png"><span>动态</span></li>
+    <li><img src="images/title_pic1.png"><span>排行版</span></li>
+    <li><img src="images/title_pic1.png"><span>频道</span></li>
+  </ul>
+  <ul class="two">
+    <li><a href="#">动画<i>121</i></a></li>
+    <li><a href="#">音乐<i>121</i></a></li>
+    <li><a href="#">舞蹈<i>121</i></a></li>
+    <li><a href="#">知识<i>121</i></a></li>
+    <li><a href="#">生活<i>121</i></a></li>
+    <li><a href="#">放映<i>121</i></a></li>
+    <li><a href="#">时尚<i>121</i></a></li>
+    <li><a href="简良权/blbler/index2.html" target="_blank">电影<i>121</i></a></li>
+    <li><a href="熊万林/index2.html">徽章<i>121</i></a></li><br>
+    <li><a href="FanJv.html" target="if">番剧<i>121</i></a></li>
+    <li><a href="#">国创<i>121</i></a></li>
+    <li><a href="19302030329-郑文杰-安卓二班/yx.html" target="_blank">游戏<i>121</i></a></li>
+    <li><a href="#">数码<i>121</i></a></li>
+    <li><a href="#">资讯<i>121</i></a></li>
+    <li><a href="19302030329-郑文杰-安卓二班/ys.html" target="_blank">影视<i>121</i></a></li>
+    <li><a href="#">更多<i>121</i></a></li>
+    <li><a href="简良权/blblwangye/index.html" target="_blank">动物<i>121</i></a></li>
+    <li><a href="#">时尚<i>121</i></a></li>
+  </ul>
+  <div><img src="熊万林/websucai/title_pic5.png"></div>
+</div>
+
+
+<div style="height: 3000px">
+  <iframe name="if" src="熊万林/index.html" frameborder="0" scrolling="no" style="width: 1516px ;height: 100%"></iframe>
+</div>
+
+
+</body>
+</html>

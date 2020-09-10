@@ -1,0 +1,198 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.largest{
+    width:990px;
+    height:732px;
+    margin:0 auto;
+    border:1px red solid;
+    position:relative;
+    border:none;
+
+
+}
+div.column{
+    width:39px;
+    height:757px;
+    border:1px red solid;
+    //border:none;
+    background:url("i3/column_bg.gif");
+    position:absolute;left:0px;top:0px;
+
+}
+#left{
+    width:5px;
+    height:760px;
+    border:black 1px solid;
+    border:none;
+    background-color:#AB0000;
+    position:absolute;left:-9px;top:0px;
+}
+.largest .title{
+    width:715px;
+    height:75px;
+    border-right:4px solid #AB0000;
+//border:none;
+    position:absolute; left:40px;top :10px;
+    background-color:#F3F3EB ;
+
+}
+#leadline{
+    width:700px;
+    height:30px;
+    border:#AB0000 1px solid;
+    position:absolute;left:-9px;top: 85px;
+    margin-left: 5%;
+    font-family: bold;
+    vertical-align: middle;
+    font-size:16px;
+    background-color: #F3F3EB;
+
+
+}
+#leadline li{
+
+    float:left;
+    margin-left:10px;
+    margin-top:2px;
+    list-style: none;
+}
+#leadline ul li a:link {
+    color:#AB0000;
+    text-decoration:none;
+}
+#leadline ul li a:hover{
+    color:skyblue;
+    text-decoration: underline;
+}
+.content{
+    width:700px;
+    height:630px;
+    border:black solid 1px;
+  //border:none;
+    position:absolute; left:40px;top:115px;
+    background-color: #F3F3EB;
+}
+.right{
+    width:15px;
+    height:667px;
+    position:absolute;left:740px;top:85px;
+    border-right:#990101 solid 4px ;
+    border-bottom: #990101 6px solid;
+//border:none;
+    background-image: url("i3/main_bg.gif");
+}
+.top{
+    width:720px;
+    height:7px;
+    border:#AB0000 1px solid;
+    position:absolute;left:37px;top:0px;
+    background-color:#AB0000;
+
+}
+.column .words{
+    font-family:·ÂËÎ;
+    font-size: 12px;
+    width:3px;
+    margin-left:10px;
+    margin-top:85px;
+}
+
+div p a:link{
+    color:white;
+    text-decoration: none;
+}
+div p a:hover {
+    color: yellow;
+    decoration-line: underline;
+}
+.tuji{
+    width:236px;
+    height:757px;
+    border:1px solid red;
+    border:none;
+    position:absolute;right:-7px;top:0px;
+    background-color:#EADCC2 ;
+}
+#smallline {
+    width:236px;
+    height:20px;
+    position:absolute;right:0px;top:0px;
+    background-color:#AB0000;
+}
+#smallline ul li{
+    float:left;
+    list-style:none;
+    margin-left:9px;
+    margin-top:1px;
+}
+#smallline ul li a:link{
+    clolor:white;
+    text-decoration:none;
+}
+.tuji.smallline ul li a:hover{
+    color:yellow;
+    text-decoration: underline;
+}
+.pic{
+    width:236px;
+    height:710px;
+    position:absolute;right:0px;top:20px;
+    background-color: #EADCC2;
+    margin:0;
+
+}
+.bottomwords{
+    width:700px;
+    height:30px;
+    border:black solid 1px;
+    border:none;
+    position:absolute;
+    bottom:60px;
+
+}
+.bottomwords2{
+    width:700px;
+    height:30px;
+    border:1px red solid;
+    border:none;
+    position:absolute;
+    bottom:40px;
+}
+.bottomwords2 ul li{
+    list-style: none;
+    float:left;
+    margin:6px;
+    padding-top:3px;
+}
+.bottomwords2 ul li a:link{
+    color:gray;
+    text-decoration: none;
+}
+.bottomwords2 ul li a:hover{
+    color:skyblue;
+    text-decoration: underline;
+}
+.bottomwords ul li{
+    list-style: none;
+    float:left;
+    margin:6px;
+    padding-top:3px;
+}
+.bottomwords ul li a:link{
+    color:black;
+    text-decoration: none;
+}
+.bottomwords ul li a:hover{
+    color:skyblue;
+    text-decoration: underline;
+}
+.smalllead a:link{
+    color:gray;
+    text-decoration: none;
+}
+.smalllead a:hover{
+    color:red;
+    text-decoration: underline;
+}

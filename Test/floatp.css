@@ -1,0 +1,59 @@
+div.pic {
+    width: 450px;
+    height: 180px;
+    border: red;
+}
+div.ls {
+    background: url(i/framels.jpg) no-repeat;
+}
+div.ls img {
+    padding: 34px 14px 36px 11px;
+}
+div.pt {
+    background: url(i/framept.jpg) no-repeat;
+}
+div.pt img {
+    padding: 12px 18px 13px 30px;
+}
+div.pic a {
+    float: left;
+}
+div a {
+    display: block;
+    height: 160px;
+    width: 160px;
+}
+div.ls a:hover {
+    background: url("i/framels_hover.jpg") no-repeat;
+}
+div.pt a:hover {
+    background: url("i/framept_hover.jpg") no-repeat;
+}
+div.pic ul {
+    list-style: none;
+    border: 2px solid #a7d5ff;
+    font-size: 12px;
+    background-color: #dceeff;
+    padding-left: 0.6em;
+    margin-left: 170px;
+}
+div.pic ul li.title {
+    font-weight: bold;
+    color: #004586;
+    border-bottom: 1px solid ;
+    padding-top: 3px;
+    padding-bottom: 2px;
+}
+div.pic ul li.neirong {
+    border-left: 1px solid ;
+    color: #0068c9;
+    margin-left: 13em;
+    padding-left: 5px;
+}
+div.pic ul li.end {
+    color: #0068c9;
+    margin-top: -1.2em;
+    border-left: 1px solid ;
+    margin-left: 18em;
+    padding-left: 5px;
+}

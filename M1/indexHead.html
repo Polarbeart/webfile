@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+  <style type="text/css">
+    *{
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    a{
+      color: black;
+      transition:color .2s;
+    }
+    a:hover{
+      color: #00a1d6;
+    }
+    /*
+      -----------------------------------------------------------index
+    */
+    div.index{
+      overflow: hidden;
+      width: 100%;
+      background-image: url("images/22650682fd25a4a5aa96dd9ef53190c6b8d54912.png");
+      background-size: 1550px 155px;
+      height: 150px;
+      position: relative;
+    }
+    div.index::before{
+      content: "";
+      background-color: black;
+      background:-webkit-linear-gradient(top,#000000,transparent);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      opacity: 0.5;
+    }
+    div.index ul{
+      overflow: hidden;
+      height: 50px;
+      padding: 0 0 0 10px;
+      position: relative;
+    }
+
+    div.index ul li{
+      overflow: hidden;
+      float: left;
+      margin: 0 10px 0 5px;
+    }
+    div.index ul li a{
+      line-height: 50px;
+      font-size: 14px;
+      color: #FFFFFF;
+      position: relative;
+    }
+    div.index ul li a span{
+      font-size: 30px;
+      font-weight: bold;
+      color: #00a1d6;
+      margin: 0 10px 0 0;
+    }
+    /*
+    ------------------------------------------------------index 详细Id属性
+    */
+    #zhuZhan{
+      text-align: center;
+    }
+    #zhuZhan i{
+      background-image: url("images/icons.png");
+      background-position: -852px -82px;
+      display: inline-block;
+      font-size: 18px;
+      width: 20px;
+      height: 20px;
+      margin: 0 5px 0 0;
+    }
+    div.index ul li .bml{
+      overflow: hidden;
+    }
+    div.index ul li a.bml span{
+      font-size: 20px;
+      color: #FFFFFF;
+      transition: all .5s;
+    }
+    div.index ul li a.bml img{
+      position: absolute;
+      width: 70px;
+      top: -18px;
+      left: -14px;
+      transition: all .5s;
+      opacity: 0;
+    }
+    div.index ul li input{
+      width: 400px;
+      font-size: 14px;
+      line-height: 34px;
+      color: #999999;
+      border: solid 1px #FFFFFF;
+      border-radius:  2px 0 0 2px;
+      padding: 0 0 0 10px;
+    }
+    div.index ul li.souSuo div{
+      width: 48px;
+      height: 36px;
+      background-color: #e7e7e7;
+      background-image: url("images/icons.png");
+      background-position: -778px -719px;
+      float: right;
+      margin: 7px 0 0 0;
+      border-radius: 0 2px 2px 0;
+    }
+
+    #touGao{
+      background-color: #ff85ad;
+      height: 36px;
+      width: 100px;
+      border-radius: 2px;
+      margin: 10px 0 0 0;
+      text-align:center;
+    }
+    #touGao a {
+      line-height: 36px;
+      color: #FFFFFF;
+    }
+    /*
+    ------------------------------------------------------导航
+    */
+    .daHang{
+      margin: 15px auto;
+      width: 1160px;
+    }
+    .daHang ul{
+      float: left;
+
+    }
+    .daHang ul li{
+      float: left;
+    }
+    .daHang .one li{
+      width: 50px;
+      text-align: center;
+    }
+    .daHang .two{
+      margin: 0 0 0 20px;
+    }
+    .daHang .two li{
+      margin: 10px 20px 0 0;
+    }
+    .daHang .two li a i{
+      display: inline-block;
+      width: 25px;
+      text-align: center;
+      font-size: 12px;
+      background-color: #73c9e5;
+      color: #FFFFFF;
+      border-radius: 2px;
+      margin: 0 0 0 3px;
+    }
+    /*
+    ------------------------------------------------------尾部 futer
+    */
+    div.futer{
+      overflow: hidden;
+      width: 100%;
+      background-color: #f6f9fa;
+    }
+    div.futer div.ul{
+      overflow: hidden;
+      width: 1160px;
+      margin: auto;
+      padding: 20px 0 0 0;
+    }
+    div.futer div.ul ul{
+      overflow: hidden;
+      width: 400px;
+      float: left;
+      border-right: solid 1px #eeeeee;
+      margin: 0 30px 0 0;
+    }
+    div.futer div.ul ul.one li.head{
+      width: 100%;
+      color: #aaaaaa;
+      font-size: 20px;
+      line-height: 25px;
+      float: none;
+    }
+    div.futer div.ul ul.one li{
+      float: left;
+      line-height: 30px;
+      width: 120px;
+      margin: 0 0 0 0;
+    }
+    div.futer div.ul ul.two{
+      width: 260px;
+      float: left;
+      border-right: 0;
+
+    }
+    div.futer div.ul ul.two li{
+      width: 80px;
+      float: left;
+      text-align: center;
+    }
+    div.futer div.ul ul.two li span{
+      display: inline-block;
+      width: 100%;
+    }
+    div.futer div.ul ul.two .one i{
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      background-image: url("images/icons.png");
+      background-position: -1105px -202px;
+      margin: 5px 0 5px 0;
+    }
+    div.futer div.ul ul.two .two i{
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background-image: url("images/icons.png");
+      background-position: -1103px -910px;
+    }
+    div.futer div.ul ul.two .thre i{
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background-image: url("images/icons.png");
+      background-position: -1103px -845px;
+    }
+    div.futer .text{
+      overflow: hidden;
+      width: 1160px;
+      margin: auto;
+      margin-top: 40px;
+    }
+    div.futer .text p{
+      width: 100%;
+      font-size: 12px;
+      color: #aaaaaa;
+      line-height: 20px;
+    }
+    div.futer .text p span{
+      font-size: 12px;
+    }
+    div.futer .text p a{
+      font-size: 12px;
+    }
+    div.futer .text a{
+      color: #aaaaaa;
+    }
+    div.futer .text .img{
+      float: left;
+      overflow: hidden;
+      width: 96px;
+      margin: 0 20px 0 0;
+    }
+    div.futer .text .img a img{
+      float: left;
+    }
+  </style>
+</head>
+<body>
+<div class="index">
+  <ul>
+    <li><a id="zhuZhan" href="FinalCompetion/index1.html" target="if"><i></i>主站</a></li>
+    <li><a href="#">番剧</a></li>
+    <li><a href="#">游戏中心</a></li>
+    <li><a href="#">直播</a></li>
+    <li><a href="#">会员购</a></li>
+    <li><a href="#">漫画</a></li>
+    <li><a href="#">会员购</a></li>
+    <li><a href="#">赛事</a></li>
+    <li><a class="bml" href="#"><span id="BML">BML</span><img id="BML2" src="images/ab040df590b2bd08ad74f8753e4f853d80e83d45.png"></a></li>
+    <script type="text/javascript" src="jq.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        var index=0;
+        setInterval(function(){
+          if(index==0){
+            $("#BML").css("opacity","0");
+            $(".bml img").css("opacity","1");
+            index=1;
+          }else{
+            $(".bml img").css("opacity","0");
+            $("#BML").css("opacity","1");
+            index=0;
+          }
+        },5000)
+      })
+    </script>
+    <li><a href="#"><i></i>下载app</a></li>
+    <li class="souSuo"><a href="#"><form action = "#"><input type="text" placeholder="油管荒野建造大师B站买房！"><div></div></form></a></li>
+    <li><a href="#">img</a></li>
+    <li><a href="#">大会员</a></li>
+    <li><a href="#">消息</a></li>
+    <li><a href="#">动态</a></li>
+    <li><a href="#">收藏</a></li>
+    <li><a href="#">历史</a></li>
+    <li><a href="#">创作中心</a></li>
+    <li id="touGao"><a href="siPing.html" target="if">投稿</a></li>
+  </ul>
+</div>
+<div class="daHang">
+  <ul class="one">
+    <li><a href="#"><img src="images/title_pic1.png"><span>首页</span></a></li>
+    <li><a href="#"><img src="images/untitled.png"><span>动态</span></a></li>
+    <li><a href="#"><img src="images/title_pic3.png"><span>排行版</span></a></li>
+    <li><a href="#"><img src="images/title_pic4.png"><span>频道</span></a></li>
+  </ul>
+  <ul class="two">
+    <li><a href="#">动画<i>121</i></a></li>
+    <li><a href="#">音乐<i>121</i></a></li>
+    <li><a href="#">舞蹈<i>121</i></a></li>
+    <li><a href="#">知识<i>121</i></a></li>
+    <li><a href="#">生活<i>121</i></a></li>
+    <li><a href="#">放映<i>121</i></a></li>
+    <li><a href="#">时尚<i>121</i></a></li>
+    <li><a href="blbler/index2.html" target="if">电影<i>121</i></a></li>
+    <li><a href="熊万林/index2.html">徽章<i>121</i></a></li><br>
+    <li><a href="FanJv.html" target="if">番剧<i>121</i></a></li>
+    <li><a href="#">国创<i>121</i></a></li>
+    <li><a href="19302030329-郑文杰-安卓二班/yx.html" target="_blank">游戏<i>121</i></a></li>
+    <li><a href="#">数码<i>121</i></a></li>
+    <li><a href="#">资讯<i>121</i></a></li>
+    <li><a href="19302030329-郑文杰-安卓二班/ys.html" target="_blank">影视<i>121</i></a></li>
+    <li ><a href="bilibili2/index6.html" target="if">更多<i>121</i></a></li>
+    <li><a href="简良权/blblwangye/index.html" target="_blank">动物<i>121</i></a></li>
+    <li><a href="#">时尚<i>999</i></a></li>
+  </ul>
+  <div><img src="熊万林/websucai/title_pic5.png"></div>
+</div>
+
+<div style="height: 3000px">
+  <iframe name="if" src="FanJv.html" frameborder="0" scrolling="no" style="width: 1516px ;height: 100%"></iframe>
+</div>
+
+<div class="futer">
+  <div class="ul">
+    <ul class="one">
+      <li class="head">bilibili</li>
+      <li>关于我们</li>
+      <li>加入我们</li>
+      <li>bilibili认证</li>
+      <li>联系我们</li>
+      <li>友情链接</li>
+      <li>Investor Relations</li>
+      <li>用户协议</li>
+      <li>隐私政策</li>
+    </ul>
+    <ul class="one">
+      <li class="head">传送门</li>
+      <li>帮助中心</li>
+      <li>侵权申述</li>
+      <li>壁纸站</li>
+      <li>高级弹幕</li>
+      <li>活动中心</li>
+      <li>广告合作</li>
+      <li>活动专题页</li>
+      <li>用户反馈论坛</li>
+      <li>名人堂</li>
+    </ul>
+    <ul class="two">
+      <li><a class="one" href="#"><i></i><span>客户端下载</span></a></li>
+      <li><a class="two" href="#"><i></i><span>新浪微博</span></a></li>
+      <li><a class="thre" href="#"><i></i><span>官方微信</span></a></li>
+    </ul>
+  </div>
+  <div class="text" style="font-size: 12px">
+    <div  class="img">
+      <a href="#">
+        <img src="images/partner.png" style="width: 96px">
+        <img src="images/pic962110.png" style="width: 96px">
+        <img src="images/confirm.png" style="width: 96px">
+      </a>
+    </div>
+    <p>
+      <span><a href="#" style="font-size: 12px">营业执照</a></span>
+      <span>信息网络传播视听节目许可证：0910417</span>
+      <span>网络文化经营许可证 沪网文【2019】3804-274号</span>
+      <span>广播电视节目制作经营许可证：（沪）字第01248号</span>
+      <span>增值电信业务经营许可证 沪B2-20100043</span>
+      <span>互联网ICP备案：<a href="#">沪ICP备13002172号-3</a></span>
+      <span>出版物经营许可证 沪批字第U6699 号</span>
+      <span>互联网药品信息服务资格证 沪-非经营性-2016-0143</span>
+      <span>营业性演出许可证 沪市文演（经）00-2253</span>
+    </p>
+    <p>违法不良信息举报邮箱：help@bilibili.com |违法不良信息举报电话：4000233233转3</p>
+    <p><i class="one"></i><a href="#"  style="font-size: 12px">上海互联网举报中心</a> |
+      <a href="#">12318全国文化市场举报网站</a> |
+      <i class="two"></i>
+      <a href="#">沪公网安备31011002002436号</a> |
+      <a href="#">儿童色情信息举报专区</a> |
+      <a href="#">扫黄打非举报</a></p>
+    <p>网上有害信息举报专区：<i class="thre"></i><a href="#">中国互联网违法和不良信息举报中心</a></p>
+    <p>亲爱的市民朋友，上海警方反诈劝阻电话“962110”系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听。</p>
+    <p>公司名称：上海宽娱数码科技有限公司|公司地址：上海市杨浦区政立路485号|电话：021-25099888</p>
+  </div>
+</div>
+</body>
+</html>

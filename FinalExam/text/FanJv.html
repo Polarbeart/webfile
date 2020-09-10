@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="FanJv.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="zhu">
+
+  <div class="daoHang">
+    <ul>
+      <li><a href="#">全部</a></li>
+      <li><a href="#">连载动画</a></li>
+      <li><a href="#">完结动画</a></li>
+      <li><a href="#">资讯</a></li>
+      <li><a href="#">官方延伸</a></li>
+      <li><a href="#">新番时间表</a></li>
+      <li><a href="#">番剧索引</a></li>
+      <div class="tu"></div>
+    </ul>
+  </div>
+
+  <div class="tuiJian">
+    <a href="#">
+    <div class="dongTai">
+      <div class="dongTai-img"><img src="images/30edd2ab9808e73a3363caaccc1f56c4cbcfb5ee.jpg@2320w_664h.jpg"></div>
+      <div class="dongTai-img"><img src="images/e71bee616ef9d04fa4780d98349993a30e836a54.png@2320w_664h.png"></div>
+      <div class="dongTai-img"><img src="images/23d6d95e67424271dfc64ce4643a7a61aeb8e149.jpg@2320w_664h.jpg"></div>
+      <div class="dongTai-img"><img src="images/c92ccaa85db9ccae2358b5dfcaca7680a2dd8078.jpg@2320w_664h.jpg"></div>
+      <div class="dongTai-img"><img src="images/d3b0e4f716a82fe3e335f9972e7511806e467103.jpg@2320w_664h.jpg"></div>
+      <ul>
+        <div class="border"></div>
+        <li class="imgHover" id="hover0"><img src="images/R%7BZN%7BK@%7B%60W%5B0TKXK3R8%5B4IJ.png"></li>
+        <li class="imgHover" id="hover1"><img src="images/FEE57D17204E43B49F5F0439A833A310.jpg"></li>
+        <li class="imgHover" id="hover2"><img src="images/7F4FF7F0159D4215B79BE817D73325F1.jpg"></li>
+        <li class="imgHover" id="hover3"><img src="images/A527F64F74D74C169B187F2FA6125634.jpg"></li>
+        <li class="imgHover" id="hover4"><img src="images/17497BFD08F14410920616EC79022599.jpg"></li>
+      </ul>
+    </div>
+    </a>
+    <script type="text/javascript" src="jq.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        var index=0;
+        var kg=0;
+        var time=0;
+        setInterval(function(){
+          time++;
+          if(time>50){
+            time=0;
+            if(kg==1){
+              $(".dongTai-img").css("opacity","0");
+              $(".dongTai-img").eq(index).css("opacity","1");
+            }else if(index==4){
+              index=0;
+              $(".dongTai-img").css("opacity","0");
+              $(".dongTai-img").eq(index).css("opacity","1");
+            }else{
+              index++;
+              $(".dongTai-img").css("opacity","0");
+              $(".dongTai-img").eq(index).css("opacity","1");
+            }
+            if(index==0){
+              $(".border").css("margin-left","0")
+            }else if(index==1){
+              $(".border").css("margin-left","80px")
+            }else if(index==2){
+              $(".border").css("margin-left","160px")
+            }else if(index==3){
+              $(".border").css("margin-left","240px")
+            }else if(index==4){
+              $(".border").css("margin-left","320px")
+            }
+          }else{
+            $("#hover0").mouseenter(function() {
+              index=0;
+              kg=1;
+            });
+            $("#hover0").mouseleave(function() {
+              time=0;
+              index=0;
+              kg=0;
+            });
+            $("#hover1").mouseenter(function() {
+              index=1;
+              kg=1;
+            });
+            $("#hover1").mouseleave(function() {
+              index=1;
+              time=0;
+              kg=0;
+            });
+            $("#hover2").mouseenter(function() {
+              index=2;
+              kg=1;
+            });
+            $("#hover2").mouseleave(function() {
+              time=0;
+              index=2;
+              kg=0;
+            });
+            $("#hover3").mouseenter(function() {
+              index=3;
+              kg=1;
+            });
+            $("#hover3").mouseleave(function() {
+              time=0;
+              index=3;
+              kg=0;
+            });
+            $("#hover4").mouseenter(function() {
+              index=4;
+              kg=1;
+            });
+            $("#hover4").mouseleave(function() {
+              time=0;
+              index=4;
+              kg=0;
+            });
+            $(".dongTai-img").css("opacity","0");
+            $(".dongTai-img").eq(index).css("opacity","1");
+            if(index==0){
+              $(".border").css("margin-left","0")
+            }else if(index==1){
+              $(".border").css("margin-left","80px")
+            }else if(index==2){
+              $(".border").css("margin-left","160px")
+            }else if(index==3){
+              $(".border").css("margin-left","240px")
+            }else if(index==4){
+              $(".border").css("margin-left","320px")
+            }
+          }
+        },50)
+      })
+    </script>
+    <div id="shishi" class="jingTai">
+      <div class="zuiJin">
+        <div class="kaiTou">
+          <h4>最近更新</h4>
+          <a href="#">新番时间表<i></i></a>
+        </div>
+        <ul>
+          <li>
+            <a href="#" title="星掠者"><img src="images/dde44a423cc454d43df2663d97d7ef7a6f31564b.jpg@90w_90h.jpg"></a>
+            <p><a href="#" title="星掠者">星掠者</a></p>
+            <p class="ji">更新至<a href="#">12话</a></p>
+          </li>
+          <li>
+            <a href="#" title="生效奇缘"><img src="images/82cbba4b6e35a2d70cf79aa7308b7637e43b8726.png@90w_90h.png"></a>
+            <p><a href="#" title="生效奇缘">生效奇缘</a></p>
+            <p class="ji">更新至<a href="#">12话</a></p>
+          </li>
+          <li>
+            <a href="#" title="水果篮子"><img src="images/50ae3da8e02efbbffba52f5c3406891cec8cb392.jpg@90w_90h.jpg"></a>
+            <p><a href="#" title="水果篮子">水果篮子</a></p>
+            <p class="ji">更新至<a href="#">12话</a></p>
+          </li>
+          <li>
+            <a href="#" title="神之塔"><img src="images/1a217a2d5885facfc76b1c7b1f08435466a88ebd.png@90w_90h.png"></a>
+            <p><a href="#" title="神之塔">神之塔</a></p>
+            <p class="ji">更新至<a href="#">12话</a></p>
+          </li>
+          <li>
+            <a href="#" title="邪神与厨二病少女"><img src="images/65ff61936d9faddbd9ae17a2876e458b38dd1cdd.png@268w_358h.png"></a>
+            <p><a href="#" title="邪神与厨二病少女">邪神与厨二病少女</a></p>
+            <p class="ji">更新至<a href="#">12话</a></p>
+          </li>
+          <li>
+            <a href="#" title="智龙迷城"><img src="images/4143c286982fd8f9ad467af7b6e4a74aaee1c026.jpg@90w_90h.jpg"></a>
+            <p><a href="#" title="智龙迷城">智龙迷城</a></p>
+            <p class="ji">更新至<a href="#">12话</a></p>
+          </li>
+          <li>
+            <a href="#" title="暖暖日记"><img src="images/01a56659dec4dd58518f31645fa6d3f4bb55754e.png@90w_90h.png"></a>
+            <p><a href="#" title="暖暖日记">暖暖日记</a></p>
+            <p class="ji">更新至<a href="#">12话</a></p>
+          </li>
+          <li>
+            <a href="#" title="ARGONAVIS from BanG Dream！（僅限台灣地區）"><img src="images/2b1e7f105344f1a2e76a305c22746b21a846812c.png@90w_90h.png"></a>
+            <p><a href="#" title="ARGONAVIS from BanG Dream！（僅限台灣地區）">ARGONAVIS from BanG Dream！（僅限台灣地區）</a></p>
+            <p class="ji">更新至<a href="#">12话</a></p>
+          </li>
+          <li>
+            <a href="#" title="文豪与炼金术师 ～审判的齿轮～"><img src="images/09af615ed4eeac27b2ff0f5fe5efc26c54baeb4a.png@90w_90h.png"></a>
+            <p><a href="#" title="文豪与炼金术师 ～审判的齿轮～">文豪与炼金术师 ～审判的齿轮～</a></p>
+            <p class="ji">更新至<a href="#">12话</a></p>
+          </li>
+          <li>
+            <a href="#" title="炎炎消防隊 貳之章（僅限港澳台地區）"><img src="images/d52ca0434f70e9b0561c22c33938aab926fad958.jpg@90w_90h.jpg"></a>
+            <p><a href="#" title="炎炎消防隊 貳之章（僅限港澳台地區）">炎炎消防隊 貳之章（僅限港澳台地區）</a></p>
+            <p class="ji">更新至<a href="#">12话</a></p>
+          </li>
+          <li>
+            <a href="#" title="弩級戰隊H×EROS（僅限港澳台地區）"><img src="images/70a44598a0fc5c3f3539dd2e22890f674e0b8678.png@90w_90h.png"></a>
+            <p><a href="#" title="弩級戰隊H×EROS（僅限港澳台地區）">弩級戰隊H×EROS（僅限港澳台地區）</a></p>
+            <p class="ji">更新至<a href="#">12话</a></p>
+          </li>
+          <li>
+            <a href="#" title="BanG Dream! 少女乐团派对！☆PICO～大份～"><img src="images/f5385a590d7d4c05dcb04e590a43b7622ae49d66.png@90w_90h.png"></a>
+            <p><a href="#" title="BanG Dream! 少女乐团派对！☆PICO～大份～">BanG Dream! 少女乐团派对！☆PICO～大份～</a></p>
+            <p class="ji">更新至<a href="#">12话</a></p>
+          </li>
+          <li>
+            <a href="#" title="辉夜大小姐想让我告白？～天才们的恋爱头脑战～"><img src="images/093fb58647f38be27f2c0f145e9ed1debc5cb1d3.jpg@90w_90h.jpg"></a>
+            <p><a href="#" title="辉夜大小姐想让我告白？～天才们的恋爱头脑战～">辉夜大小姐想让我告白？～天才们的恋爱头脑战～</a></p>
+            <p class="ji">更新至<a href="#">12话</a></p>
+          </li>
+          <li>
+            <a href="#" title="我的青春恋爱物语果然有问题。完"><img src="images/9a854e573c1c2fea7a6ae5032805f758e774e24f.jpg@90w_90h.jpg"></a>
+            <p><a href="#" title="我的青春恋爱物语果然有问题。完">我的青春恋爱物语果然有问题。完</a></p>
+            <p class="ji">更新至<a href="#">12话</a></p>
+          </li>
+          <li>
+            <a href="#" title="非枪人生 第二季"><img src="images/44fbfc80dc5165c88ad730a34e382d4ccf6db702.png@90w_90h.png"></a>
+            <p><a href="#" title="非枪人生 第二季">非枪人生 第二季</a></p>
+            <p class="ji">更新至<a href="#">12话</a></p>
+          </li>
+          <li>
+            <a href="#" title="刀剑神域 爱丽丝篇 异界战争 -终章-"><img src="images/fbaf4013b1df1e04c451c47c2a823aa1370b99b9.png@90w_90h.png"></a>
+            <p><a href="#" title="刀剑神域 爱丽丝篇 异界战争 -终章-">刀剑神域 爱丽丝篇 异界战争 -终章-</a></p>
+            <p class="ji">更新至<a href="#">12话</a></p>
+          </li>
+          <li>
+            <a href="#" title="宇崎学妹想要玩！"><img src="images/86303fd2fc3aa4ce4d5969888ce66ea1b4801d1c.png@90w_90h.png"></a>
+            <p><a href="#" title="宇崎学妹想要玩！">宇崎学妹想要玩！</a></p>
+            <p class="ji">更新至<a href="#">12话</a></p>
+          </li>
+          <li>
+            <a href="#" title="Re：从零开始的异世界生活 第二季"><img src="images/08e401fa1e02cfb1be175a1bc3ac819b2e1e3a0b.jpg@90w_90h.jpg"></a>
+            <p><a href="#" title="Re：从零开始的异世界生活 第二季">Re：从零开始的异世界生活 第二季</a></p>
+            <p class="ji">更新至<a href="#">12话</a></p>
+          </li>
+          <li>
+            <a href="#" title="魔物娘的医生"><img src="images/370ea95999ad9c945d6cbdca0fa911ecf9395884.png@90w_90h.png"></a>
+            <p><a href="#" title="魔物娘的医生">魔物娘的医生</a></p>
+            <p class="ji">更新至<a href="#">12话</a></p>
+          </li>
+          <li>
+            <a href="#" title="星掠者"><img src="images/dde44a423cc454d43df2663d97d7ef7a6f31564b.jpg@90w_90h.jpg"></a>
+            <p><a href="#" title="星掠者">星掠者</a></p>
+            <p class="ji">更新至<a href="#">12话</a></p>
+          </li>
+          <li>
+            <a href="#" title="星掠者"><img src="images/dde44a423cc454d43df2663d97d7ef7a6f31564b.jpg@90w_90h.jpg"></a>
+            <p><a href="#" title="星掠者">星掠者</a></p>
+            <p class="ji">更新至<a href="#">12话</a></p>
+          </li>
+          <li>
+            <a href="#" title="生效奇缘"><img src="images/82cbba4b6e35a2d70cf79aa7308b7637e43b8726.png@90w_90h.png"></a>
+            <p><a href="#" title="生效奇缘">生效奇缘</a></p>
+            <p class="ji">更新至<a href="#">12话</a></p>
+          </li>
+          <li>
+            <a href="#" title="水果篮子"><img src="images/50ae3da8e02efbbffba52f5c3406891cec8cb392.jpg@90w_90h.jpg"></a>
+            <p><a href="#" title="水果篮子">水果篮子</a></p>
+            <p class="ji">更新至<a href="#">12话</a></p>
+          </li>
+          <li>
+            <a href="#" title="神之塔"><img src="images/1a217a2d5885facfc76b1c7b1f08435466a88ebd.png@90w_90h.png"></a>
+            <p><a href="#" title="神之塔">神之塔</a></p>
+            <p class="ji">更新至<a href="#">12话</a></p>
+          </li>
+          <li>
+            <a href="#" title="邪神与厨二病少女"><img src="images/65ff61936d9faddbd9ae17a2876e458b38dd1cdd.png@268w_358h.png"></a>
+            <p><a href="#" title="邪神与厨二病少女">邪神与厨二病少女</a></p>
+            <p class="ji">更新至<a href="#">12话</a></p>
+          </li>
+          <li>
+            <a href="#" title="智龙迷城"><img src="images/4143c286982fd8f9ad467af7b6e4a74aaee1c026.jpg@90w_90h.jpg"></a>
+            <p><a href="#" title="智龙迷城">智龙迷城</a></p>
+            <p class="ji">更新至<a href="#">12话</a></p>
+          </li>
+          <li>
+            <a href="#" title="暖暖日记"><img src="images/01a56659dec4dd58518f31645fa6d3f4bb55754e.png@90w_90h.png"></a>
+            <p><a href="#" title="暖暖日记">暖暖日记</a></p>
+            <p class="ji">更新至<a href="#">12话</a></p>
+          </li>
+          <li>
+            <a href="#" title="ARGONAVIS from BanG Dream！（僅限台灣地區）"><img src="images/2b1e7f105344f1a2e76a305c22746b21a846812c.png@90w_90h.png"></a>
+            <p><a href="#" title="ARGONAVIS from BanG Dream！（僅限台灣地區）">ARGONAVIS from BanG Dream！（僅限台灣地區）</a></p>
+            <p class="ji">更新至<a href="#">12话</a></p>
+          </li>
+        </ul>
+      </div>
+      <div class="woDe">
+        <div class="kaiTou">
+          <h5>我的追番</h5>
+          <a>更多<i></i></a>
+        </div>
+          <ul>
+            <li>
+              <a href="#" title="辉夜大小姐想让我告白？～天才们的恋爱头脑战～"><img src="images/d56083a78b0f20f5018f1562ff0f70be40002c48.jpg@120w_75h.jpg"></a>
+              <p title="辉夜大小姐想让我告白？～天才们的恋爱头脑战～" class="biaoTi">辉夜大小姐想让我告白？～天才们的恋爱头脑战～</p>
+              <p>即将开播</p>
+              <p>看到正式PV 1:00</p>
+            </li>
+            <li>
+              <a href="#" title="神之塔"><img src="images/5f7da26b7970a283d1942719bf1e19c7c467cdf4.jpg@120w_75h.jpg"></a>
+              <p title="神之塔" class="biaoTi">神之塔</p>
+              <p>即将开播</p>
+              <p>看到正式PV 1:00</p>
+            </li>
+            <li>
+              <a href="#" title="Re：从零开始的异世界生活 第二季"><img src="images/23578c063dc238524b428f28f9d20087fcbb0be5.jpg@120w_75h.jpg"></a>
+              <p title="Re：从零开始的异世界生活 第二季" class="biaoTi">Re：从零开始的异世界生活 第二季</p>
+              <p>即将开播</p>
+              <p>看到正式PV 1:00</p>
+            </li>
+            <li>
+              <a href="#" title="无名"><img src="images/b040d3f7c9c0ed1e0843c8f113a9a83436945162.jpg@120w_75h.jpg"></a>
+              <p title="无名" class="biaoTi">无名</p>
+              <p>即将开播</p>
+              <p>看到正式PV 1:00</p>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  <div class="zheDie">
+    <a href="javascript:;"><div id="quan" onclick="elementDisplay('shishi'),ElementDisplay('quan'),ElementDisplay2('shou')">全部<i class="quan"></i></div></a>
+    <a href="javascript:;"><div id="shou" onclick="elementDisplay('shishi'),ElementDisplay('shou'),ElementDisplay2('quan')">收起<i class="shou"></i></div></a>
+  </div>
+  <script type="text/javascript">
+    function elementDisplay(objid) {
+      var obj=document.getElementById(objid);
+      if(obj.style.height !='800px'){
+        obj.style.height='800px';
+      }else{
+        obj.style.height='340px';
+      }
+    }
+    function ElementDisplay(objid) {
+      var obj=document.getElementById(objid);
+      obj.style.display = 'none';
+    }
+    function ElementDisplay2(objid) {
+      var obj = document.getElementById(objid);
+      obj.style.display = 'block';
+    }
+  </script>
+
+  <div class="guangGao"><a href="#"><img src="images/3ba0b69d73d4283185a400a98f40013f.jpg"></a></div>
+
+  <div class="suoYin">
+    <div class="suoYinTiao">
+      <span>热播</span>
+      <a href="#" class="quanBu">全部 ></a><br>
+      <a href="#">追番人数</a>
+      <a href="#">最高评分</a>
+      <a href="#">播放数量</a>
+      <a href="#"></a>
+      <a href="#"></a><a href="#"></a>
+    </div>
+    <div class="suoYinTiao">
+      <span>时间</span>
+      <a href="#" class="quanBu">全部 ></a><br>
+      <a href="#">2020</a>
+      <a href="#">2019</a>
+      <a href="#">2018</a>
+      <a href="#">2017</a>
+      <a href="#">2016</a>
+      <a href="#">2015</a>
+      <a href="#">2014</a>
+      <a href="#">2013</a>
+    </div>
+    <div class="suoYinTiao">
+      <span>风格</span>
+      <a href="#" class="quanBu">全部 ></a><br>
+      <a href="#">原创</a>
+      <a href="#">漫画改</a>
+      <a href="#">小说改</a>
+      <a href="#">游戏改</a>
+      <a href="#">布袋戏</a>
+      <a href="#">热血</a>
+      <a href="#">穿越</a>
+      <a href="#">奇幻</a>
+    </div>
+    <div class="suoYinTiao">
+      <span>热搜</span><br>
+      <a href="#">四月新番</a>
+      <a href="#">电磁炮</a>
+      <a href="#">四宫辉夜</a>
+      <a href="#">神之塔</a>
+      <a href="#">公主连结</a>
+      <a href="#">名侦探柯南</a>
+
+    </div>
+  </div>
+  <div class="lzrm">
+    <div class="lianZai">
+      <div class="kaiTou">
+        <h4>连载动画</h4>
+        <a href="#">最新动态</a>
+        <a href="#">最新投稿</a>
+        <a id="gengDuo">更多</a>
+      </div>
+      <a href="#" class="css1">
+        <div class="tu"><div><img src="image/694495c482ad877dedf0b7c26933a3062939c1a3.jpg@200w_125h.jpg"></div></div>
+        <p>【10月】我们无法一起学习！111111111</p>
+        <div><i class="i"></i>163.7万<i></i>4万</div>
+      </a>
+      <a href="#" class="css1">
+        <div class="tu"><div><img src="image/9401805411147e04f2866296356661dfad784029.jpg@200w_125h.jpg"></div></div>
+        <p>【10月】我们无法一起学习！111111111</p>
+        <div><i class="i"></i>163.7万<i></i>4万</div>
+      </a>
+      <a href="#" class="css1">
+        <div class="tu"><div><img src="image/cb40e8da92601a5884205b8f075af89e1335295e.jpg@200w_125h.jpg"></div></div>
+        <p>【10月】我们无法一起学习！111111111</p>
+        <div><i class="i"></i>163.7万<i></i>4万</div>
+      </a>
+      <a href="#" class="css1">
+        <div class="tu"><div><img src="image/4aa617c4b20181c7e47f89a7f56dc5f795810e1b.jpg@200w_125h.jpg"></div></div>
+        <p>【10月】我们无法一起学习！111111111</p>
+        <div><i class="i"></i>163.7万<i></i>4万</div>
+      </a>
+      <a href="#" class="css1">
+        <div class="tu"><div><img src="image/e3823c6f314f207b0c609fb8cae2fde65b0b53c7.jpg@200w_125h.jpg"></div></div>
+        <p>【10月】我们无法一起学习！111111111</p>
+        <div><i class="i"></i>163.7万<i></i>4万</div>
+      </a>
+      <a href="#" class="css1">
+        <div class="tu"><div><img src="image/68b92e978b75024e6b9b33067db3ab9299cf3a45.jpg@200w_125h.jpg"></div></div>
+        <p>【10月】我们无法一起学习！111111111</p>
+        <div><i class="i"></i>163.7万<i></i>4万</div>
+      </a>
+      <a href="#" class="css1">
+        <div class="tu"><div><img src="image/b19d4b5baf83e712a730a494eeece601eb006707.jpg@200w_125h.jpg"></div></div>
+        <p>辉夜大小姐想让我告白</p>
+        <div><i class="i"></i>163.7万<i></i>4万</div>
+      </a>
+      <a href="#" class="css1">
+        <div class="tu"><div><img src="image/e39760a90787784b90feac58a049f5e2bb1569ba.jpg@200w_125h.jpg"></div></div>
+        <p>【10月】我们无法一起学习！111111111</p>
+        <div><i class="i"></i>163.7万<i></i>4万</div>
+      </a>
+      <a href="#" class="css1">
+        <div class="tu"><div><img src="image/5b87ea7f6e0a68a3c0d860ba082e5a57bf9195a8.jpg@200w_125h.jpg"></div></div>
+        <p>【10月】我们无法一起学习！111111111</p>
+        <div><i class="i"></i>163.7万<i></i>4万</div>
+      </a>
+      <a href="#" class="css1">
+        <div class="tu"><div><img src="image/ab7ab34d3e15556ea58afd07d06807fa22f0b4a3.jpg@200w_125h.jpg"></div></div>
+        <p>【10月】我们无法一起学习！111111111</p>
+        <div><i class="i"></i>163.7万<i></i>4万</div>
+      </a>
+      <a href="#" class="css1">
+        <div class="tu"><div><img src="image/302c2cbdc6bb686dd546dbb4c9cbc27b733d3faf.jpg@200w_125h.jpg"></div></div>
+        <p>【10月】我们无法一起学习！111111111</p>
+        <div><i class="i"></i>163.7万<i></i>4万</div>
+      </a>
+      <a href="#" class="css1">
+        <div class="tu"><div><img src="image/83fce5b901ba8ca82df778d3ada02322a141ec08.jpg@200w_125h.jpg"></div></div>
+        <p>【10月】我们无法一起学习！111111111</p>
+        <div><i class="i"></i>163.7万<i></i>4万</div>
+      </a>
+      <a href="#" class="css1">
+        <div class="tu"><div><img src="image/3945723c6e64d8a361221add07ee778fc75c7ebb.jpg@200w_125h.jpg"></div></div>
+        <p>【10月】鬼灭之刃</p>
+        <div><i class="i"></i>163.7万<i></i>4万</div>
+      </a>
+      <a href="#" class="css1">
+        <div class="tu"><div><img src="image/e17750b65951a4fb30b66bef832a331efc15fec9.jpg@200w_125h.jpg"></div></div>
+        <p>【10月】异世界食堂</p>
+        <div><i class="i"></i>163.7万<i></i>4万</div>
+      </a>
+      <a href="#" class="css1">
+        <div class="tu"><div><img src="image/f1060d4fc0e3924b5018c1a7febe484342116a80.jpg@200w_125h.jpg"></div></div>
+        <p>【10月】灵能100%</p>
+        <div><i class="i"></i>163.7万<i></i>4万</div>
+      </a>
+    </div>
+    <div class="reMen">
+      <div class="kaiTou">
+        <span>热门</span>
+      </div>
+      <ul>
+        <li class="reMenTou"><i>1</i><img src="images/38762039141f1fd7b8f163f04e4e0c671a11051a.jpg@100w_63h.jpg">
+          <a href="#">[4月/完结]辉夜大小姐想让我告白? ~天才们的恋爱<br><span>综合评分: 280.5万</span></a></li>
+        <li class="reMenTou"><i>2</i><img src="images/e36a0521481e7f6050635fb081b49c39bbc61117.jpg@100w_63h.jpg">
+          <a href="#">[4月/完结]公主连结Re:Dive 13 [独家正版]<br><span>综合评分: 58.4万</span></a></li>
+        <li class="reMenTou"><i>3</i><img src="images/eae2b3b66c26d5b48b03f513e6f69e8eb9914eee.jpg@100w_63h.jpg">
+          <a href="#">[7月]没落要塞/DECA-DENCE 01<br><span>综合评分: 57.1万</span></a></li>
+        <li><i>4</i><a href="#">[4月/完结]格莱普尼尔13 [独家正版]</a></li>
+        <li><i>5</i><a href="#">[4月/完结]社长，战斗时间到! 12 [独家</a></li>
+        <li><i>6</i><a href="#">[4月]水果篮子第二季13</a></li>
+        <li><i>7</i><a href="#">[4月/完结]啄木鸟侦探社12</a></li>
+        <li><i>8</i><a href="#">[10月]超级小白38</a></li>
+        <li><i>9</i><a href="#">[4月]影之诗总集篇</a></li>
+        <li><i>10</i><a href="#">[4月]甜梦猫09</a></li>
+      </ul>
+      <a  href="#" class="caKan">查看更多<i></i></a>
+    </div>
+  </div>
+  <a><img src="images/1abbb40eea8eeb16a914fddd5c3dad2f.jpg" width="100%"></a>
+</div>
+</body>
+</html>

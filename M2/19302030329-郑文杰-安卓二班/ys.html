@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>影视-哔哩哔哩 (゜-゜)つロ 干杯~-bilibili</title>
+    <link href="ys.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="top">
+    <ul>
+        <li><a href="#">主站</a></li>
+        <li><a href="#">游戏中心</a></li>
+        <li><a href="#">主站</a></li>
+        <li><a href="#">游戏中心</a></li>
+        <li><a href="#">直播</a></li>
+        <li><a href="#">会员购</a></li>
+        <li><a href="#">漫画</a></li>
+        <li><a href="#">赛事</a></li>
+        <li><a href="#">周年庆</a></li>
+        <li><a href="#">BW</a></li>
+        <li><a href="#">大会员</a></li>
+        <li><a href="#">消息</a></li>
+        <li><a href="#">动态</a></li>
+        <li><a href="#">收藏</a></li>
+        <li><a href="#">历史</a></li>
+        <li><a href="#">创作中心</a></li>
+        <li><div style="width:120px;height:40px;background-color: hotpink;line-height: 50px;
+        position: absolute;top:5px;font-size:20px;text-align: center"><a href="#">投稿</a></div></li>
+    </ul>
+</div>
+<div class="zj">
+    <div class="zjdht">
+        <ul>
+            <li><a href="#">全部</a></li>
+            <li><a href="#">影视杂谈</a></li>
+            <li><a href="#">影视剪辑</a></li>
+            <li><a href="#">短片</a></li>
+            <li><a href="#">预告</a></li>
+        </ul>
+    </div>
+    <div class="zjtp">
+        <div class="lb">
+            <div class="lb-img"><img src="tp/3310d86b1afb27061649dc09c6e72529cc9d20b7.jpg@620w_220h.jpg" width="580px" height="230px"></div>
+            <div class="lb-img"><img src="tp/93066a8636419b3a50997202bfe7676ad76d69d0.jpg@620w_220h.webp" width="580px" height="230px"></div>
+            <div class="lb-img"><img src="tp/f2cc4b37220bcfa4a4aa528b277f9de76425dd34.png@620w_220h.webp" width="580px" height="230px"></div>
+            <div class="lb-img"><img src="tp/605ae421c5a32a16f7feb1fe5129e755d018718f.jpg@620w_220h.webp" width="580px" height="230px"></div>
+            <div class="lb-img"><img src="tp/17fae0ec4e443f98d64b3cdc10a9d74c9fa1261d.jpg@620w_220h.webp" width="580px" height="230px"></div>
+            <div class="lb-img"><img src="tp/a8732105e848c0fedf91a7e2644aec3328025204.png@620w_220h.webp" width="580px" height="230px"></div>
+            <div class="lb-left">&lt;</div>
+            <div class="lb-right">&gt;</div>
+            <div class="lb-zhiding">
+                <ul>
+                    <li class="botton"></li>
+                    <li class="botton"></li>
+                    <li class="botton"></li>
+                    <li class="botton"></li>
+                    <li class="botton"></li>
+                    <li class="botton"></li>
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                var index=0;//标记当前图片索引
+                var f;
+                dingshiqi();
+                function dingshiqi(){
+                    f=setInterval(function(){
+                        if(index==$(".lb-img").length-1){
+                            index=0;
+                            $(".lb-img").css("opacity","0");
+                            $(".lb-img").eq(index).css("opacity","1");
+                            $(".botton").css("background-color","#ccc");
+                            $(".botton").eq(index).css("background-color","#d8537f");
+                        }else{
+                            index++;
+                            $(".lb-img").css("opacity","0");
+                            $(".lb-img").eq(index).css("opacity","1");
+                            $(".botton").css("background-color","#ccc");
+                            $(".botton").eq(index).css("background-color","#d8537f");
+                        }
+                    },4000)
+                }
+                $(".lb-left").click(function () {
+                    clearInterval(f);
+                    if(index==0){
+                        index=$(".box-img").length-1;
+                        $(".lb-img").css("opacity","0");
+                        $(".lb-img").eq(index).css("opacity","1");
+                        $(".botton").css("background-color","#ccc");
+                        $(".botton").eq(index).css("background-color","#d8537f");
+                        dingshiqi();
+                    }
+                    else{
+                        index--;
+                        $(".lb-img").css("opacity","0");
+                        $(".lb-img").eq(index).css("opacity","1");
+                        $(".botton").css("background-color","#ccc");
+                        $(".botton").eq(index).css("background-color","#d8537f");
+                        dingshiqi();
+                    }
+                })
+                $(".lb-right").click(function () {
+                    clearInterval(f);
+                    if(index==$(".lb-img").length-1){
+                        index=0;
+                        $(".lb-img").css("opacity","0");
+                        $(".lb-img").eq(index).css("opacity","1");
+                        $(".botton").css("background-color","#ccc");
+                        $(".botton").eq(index).css("background-color","#d8537f");
+                        dingshiqi();
+                    }
+                    else{
+                        index++;
+                        $(".lb-img").css("opacity","0");
+                        $(".lb-img").eq(index).css("opacity","1");
+                        $(".botton").css("background-color","#ccc");
+                        $(".botton").eq(index).css("background-color","#d8537f");
+                        dingshiqi();
+                    }
+                })
+                $(".botton").click(function () {
+                    clearInterval(f);
+                    var indexx=$(this).index();
+                    index=indexx;
+                    $(".lb-img").css("opacity","0");
+                    $(".lb-img").eq(index).css("opacity","1");
+                    $(".botton").css("background-color","#ccc");
+                    $(".botton").eq(index).css("background-color","#d8537f");
+                    dingshiqi();
+                })
+            })
+        </script>
+        <div style="float: left; margin-top: -230px; margin-left: 600px; width: 160px">
+            <a href="#"><img src="tp/c9302c7df56f12304590d0102ddfaa3170b902af.jpg@160w_100h.jpg" width="160" height="100"></a>
+            <p>
+                【隐秘的角落】
+            </p>
+        </div>
+        <div style="float: left; margin-top: -230px; margin-left: 780px; width: 160px">
+            <a href="#"><img src="tp/1c6ec0a029cbd20f615d2d62f96979c1ff063a78.jpg@160w_100h.jpg" width="160" height="100"></a>
+            <p>
+                b站11周年
+            </p>
+        </div>
+        <div style="float: left; margin-top: -110px; margin-left: 600px; width: 160px">
+            <a href="#"><img src="tp/8cbff2776cac8037bbd2e61ec73913ebe4dceea5.jpg@160w_100h.jpg" width="160" height="100"></a>
+            <p>
+                江东猛虎孙坚
+            </p>
+        </div>
+        <div style="float: left; margin-top: -122px; margin-left: 780px; width: 160px">
+            <a href="#"><img src="tp/70b3019ffbba4f0cfe6647d4980882bee4272ab1.jpg@160w_100h.jpg" width="160" height="100"></a>
+            <p>
+                【怪你过分美丽】
+            </p>
+        </div>
+    </div>
+    <div style="margin: 10px 0 -200px 820px">
+        <a href="#">
+            <img src="QQ图片20200706182653.png">
+        </a>
+    </div>
+    <div class="zb">
+        <a href="#" class="diva" style="margin: 10px 10px 10px 10px; width: 180px ;float: left">
+            <div class="div2"><div><img src="tp/QQ图片20200629101147.png" width="160" height="100"></div></div>
+            <p>张伟，一个平凡人的独白</p>
+            <div>20万播放量</div>
+        </a>
+        <a href="#" class="diva" style="margin: 10px 10px 10px 10px; width: 180px ;float: left">
+            <div class="div2"><div><img src="tp/QQ图片20200629101214.png" width="160" height="100"></div></div>
+            <p>暗黑第一，二季 回顾与解析</p>
+            <div>30万播放量</div>
+        </a>
+        <a href="#" class="diva" style="margin: 10px 10px 10px 10px; width: 180px ;float: left">
+            <div class="div2"><div><img src="tp/QQ图片20200629102843.png" width="160" height="100"></div></div>
+            <p>杀死伊芙第一集</p>
+            <div>13万播放量</div>
+        </a>
+        <a href="#" class="diva" style="margin: 10px 10px 10px 10px; width: 180px ;float: left">
+            <div class="div2"><div><img src="tp/QQ图片20200629102921.png" width="160" height="100"></div></div>
+            <p>重温武侠梦</p>
+            <div>200万播放量</div>
+        </a>
+        <a href="#" class="diva" style="margin: 10px 10px 10px 10px; width: 180px ;float: left">
+            <div class="div2"><div><img src="tp/QQ图片20200629140904.png" width="160" height="100"></div></div>
+            <p>烂尾？全员BE</p>
+            <div>50万播放量</div>
+        </a>
+        <a href="#" class="diva" style="margin: 10px 10px 10px 10px; width: 180px ;float: left">
+            <div class="div2"><div><img src="tp/QQ图片20200629141022.png" width="160" height="100"></div></div>
+            <p>一个叫欧维的男人决定去死</p>
+            <div>70万播放量</div>
+        </a>
+        <a href="#" class="diva" style="margin: 10px 10px 10px 10px; width: 180px ;float: left">
+            <div class="div2"><div><img src="tp/QQ图片20200629141051.png" width="160" height="100"></div></div>
+            <p>校园，青春，恋爱</p>
+            <div>42万播放量</div>
+        </a>
+        <a href="#" class="diva" style="margin: 10px 10px 10px 10px; width: 180px ;float: left">
+            <div class="div2"><div><img src="tp/QQ截图20200629140658.png" width="160" height="100"></div></div>
+            <p>还请皇上三思啊</p>
+            <div>34万播放量</div>
+        </a>
+        <a href="#" class="diva" style="margin: 10px 10px 10px 10px; width: 180px ;float: left">
+            <div class="div2"><div><img src="tp/QQ截图20200629140818.png" width="160" height="100"></div></div>
+            <p>极致的黑暗</p>
+            <div>67万播放量</div>
+        </a>
+        <a href="#" class="diva" style="margin: 10px 10px 10px 10px; width: 180px ;float: left">
+            <div class="div2"><div><img src="tp/QQ截图20200629140834.png" width="160" height="100"></div></div>
+            <p>吐血推荐 致敬人民警察</p>
+            <div>98万播放量</div>
+        </a>
+        <a href="#" class="diva" style="margin: 10px 10px 10px 10px; width: 180px ;float: left">
+            <div class="div2"><div><img src="tp/QQ截图20200629141102.png" width="160" height="100"></div></div>
+            <p>神庙历险</p>
+            <div>65万播放量</div>
+        </a>
+        <a href="#" class="diva" style="margin: 10px 10px 10px 10px; width: 180px ;float: left">
+            <div class="div2"><div><img src="tp/QQ截图20200629141111.png" width="160" height="100"></div></div>
+            <p>烧脑犯罪嫌疑推理剧</p>
+            <div>44万播放量</div>
+        </a>
+        <a href="#" class="diva" style="margin: 10px 10px 10px 10px; width: 180px ;float: left">
+            <div class="div2"><div><img src="tp/QQ截图20200629141147.png" width="160" height="100"></div></div>
+            <p>想哭的我戴上了猫的面具</p>
+            <div>35万播放量</div>
+        </a>
+        <a href="#" class="diva" style="margin: 10px 10px 10px 10px; width: 180px ;float: left">
+            <div class="div2"><div><img src="tp/QQ截图20200629141202.png" width="160" height="100"></div></div>
+            <p>高颜值女主的逆袭</p>
+            <div>29万播放量</div>
+        </a>
+        <a href="#" class="diva" style="margin: 10px 10px 10px 10px; width: 180px ;float: left">
+            <div class="div2"><div><img src="tp/QQ截图20200629141217.png" width="160" height="100"></div></div>
+            <p>这才是功夫</p>
+            <div>87万播放量</div>
+        </a>
+        <a href="#" class="diva" style="margin: 10px 10px 10px 10px; width: 180px ;float: left">
+            <div class="div2"><div><img src="tp/QQ截图20200629141224.png" width="160" height="100"></div></div>
+            <p>犯罪美剧</p>
+            <div>56万播放量</div>
+        </a>
+        <a href="#" class="diva" style="margin: 10px 10px 10px 10px; width: 180px ;float: left">
+            <div class="div2"><div><img src="tp/QQ截图20200629141259.png" width="160" height="100"></div></div>
+            <p>嫁给僵尸王爷</p>
+            <div>23万播放量</div>
+        </a>
+        <a href="#" class="diva" style="margin: 10px 10px 10px 10px; width: 180px ;float: left">
+            <div class="div2"><div><img src="tp/QQ截图20200629143232.png" width="160" height="100"></div></div>
+            <p>小时候看不懂的姐妹情电影</p>
+            <div>76万播放量</div>
+        </a>
+        <a href="#" class="diva" style="margin: 10px 10px 10px 10px; width: 180px ;float: left">
+            <div class="div2"><div><img src="tp/QQ截图20200629143335.png" width="160" height="100"></div></div>
+            <p>张东升和朱朝阳的真实关系</p>
+            <div>27万播放量</div>
+        </a>
+        <a href="#" class="diva" style="margin: 10px 10px 10px 10px; width: 180px ;float: left">
+            <div class="div2"><div><img src="tp/QQ截图20200629143942.png" width="160" height="100"></div></div>
+            <p>仗剑江湖梦已远，仙剑奇侠永流传！</p>
+            <div>92万播放量</div>
+        </a>
+    </div>
+    <div class="yb" style="margin-top: -500px">
+        <div class="frist">
+            <a href="#">
+                <span class="frist1"><li>【片片】细节爆炸！还珠格格里藏着杀人秘密！不愧是9分神剧！过瘾解说《隐秘的角落》7-9</li></span>
+                <span class="frist2"><li>综合评分：174.4万</li></span>
+                <span class="frist3"><li>2020-01-20</li></span>
+            </a>
+        </div>
+        <div class="second">
+            <a href="#">
+                <span class="frist1"><li>【1900】弑父灭口！比剧集黑暗百倍，解读18万字原著《隐秘的角落》，乖孩子缘何化身恶魔</li></span>
+                <span class="frist2"><li>综合评分：75.8万</li></span>
+                <span class="frist3"><li>2020-01-15</li></span>
+            </a>
+        </div>
+        <div class="third">
+            <a href="#">
+                <span class="frist1"><li>以理扶人：李子柒“变”越南人，越南偷中国文化上瘾了？</li></span>
+                <span class="frist2"><li>综合评分：61.4万</li></span>
+                <span class="frist3"><li>2020-01-10</li></span>
+            </a>
+        </div>
+        <div class="fourth">
+            <a href="#">
+                <span class="frist1"><li>【木鱼】盘点这几年火爆全网的六大名场面</li></span>
+                <span class="frist2"><li>综合评分：57.1万</li></span>
+                <span class="frist3"><li>2020-01-05</li></span>
+            </a>
+        </div>
+        <div class="fifth">
+            <a href="#">
+                <span class="frist1"><li>【low君】《神话》：脏的不是绿色，是爱情！</li></span>
+                <span class="frist2"><li>综合评分：40.0万</li></span>
+                <span class="frist3"><li>2020-02-05</li></span>
+            </a>
+        </div>
+        <div class="sixth">
+            <a href="#">
+                <span class="frist1"><li>【虫哥】小时候看不懂的姐妹情电影《新天龙八部之天山童姥》，一堆女神互相飙戏</li></span>
+                <span class="frist2"><li>综合评分：39.9万</li></span>
+                <span class="frist3"><li>2020-02-18</li></span>
+            </a>
+        </div>
+        <div class="seventh">
+            <a href="#">
+                <span class="frist1"><li>【刘哔】解说《隐秘的角落》！详细解读朱朝阳黑化之路！</li></span>
+                <span class="frist2"><li>综合评分：38.1万</li></span>
+                <span class="frist3"><li>2020-03-06</li></span>
+            </a>
+        </div>
+    </div>
+</div>
+<div style="margin-top: 50px; margin-left: 300px">
+    <pre>
+
+    <a style="color:gray;font-size: 16px;">bilibili</a>                                          <a style="color:gray;font-size: 16px">传送门</a>
+    <a>关于我们</a>   <a>加入我们</a>   <a>bilibili认证</a>                <a>帮助中心</a>      <a>侵权申诉</a>      <a>壁纸站</a>
+    <a>联系我们</a>   <a>友情链接</a>   <a>Investor Relations</a>         <a>高级弹幕</a>      <a>活动中心</a>      <a>专车号服务中心</a>
+    <a>用户协议</a>   <a>隐私政策</a>                              <a>活动专题页</a>    <a>用户反馈论坛</a>  <a>名人堂</a>
+
+  <span style="color:gray;">营业执照 信息网络传播视听节目许可证：0910417 网络文化经营许可证 沪网文【2019】3804-274号
+    广播电视节目制作经营许可证：（沪）字第01248号 增值电信业务经营许可证 沪B2-20100043
+    互联网ICP备案：沪ICP备13002172号-3 出版物经营许可证 沪批字第U6699 号
+    互联网药品信息服务资格证 沪-非经营性-2016-0143 营业性演出许可证 沪市文演（经）00-2253
+    违法不良信息举报邮箱：help@bilibili.com |违法不良信息举报电话：4000233233转3</span>
+    </pre>
+</div>
+</body>
+</html>

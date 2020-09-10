@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        .line{
+            display:inline-block;
+            box-sizing:border-box;
+            width:1px;
+            height:200px;
+
+        }
+        .select{
+            width:210px;
+        }
+        table{
+            border:2px solid blue;
+            border-left:none;
+            border-right:none;
+            border-collapse: collapse;
+            //合并边框忽略 border-spacing 和 empty-cells 属性。
+        }
+        table td{
+            border-bottom:2px solid blue;
+            border-top:2px solid blue;
+            border-right: none;
+            border-left:none;
+            padding: 0px;
+        }
+
+        .boxline{
+            border-bottom:none;
+            border-top:none;
+            width:80px;
+        }
+        .boxline2{
+            border-bottom:2px solid blue;
+            border-top:2px solid blue;
+            height:30px;
+            border-right: none;
+            border-left:none;
+        }
+        .color{
+            color:red;
+            font-size:13px;
+        }
+
+        span{
+
+            color:gray;
+            font-size:13px;
+        }
+        .title{
+            font-size: 19px;
+            color:darkblue;
+            border-top:none;
+            //display:none;
+        }
+        .fixdiv{
+            position:fixed;
+            width:3px;
+            background-color: gray;
+            float:left;
+            height:600px;
+
+
+        }
+        .large{
+            width:625px;
+            //border:red 1px solid;
+            margin: 0 auto;
+
+        }
+
+    </style>
+</head>
+<body>
+
+<form>
+
+    <div class="large">
+        <div class="fixdiv"></div>
+
+        <table align="center" width="600" border="1" cellspacing="0" cellpadding="0">
+        <tr align="top" height="90">
+            <td class="title" colspan="3">|普通注册</td>
+
+        </tr>
+        <tr>
+            <td align="left"  height="60" bgcolor="#7fffd4"width="150" rowspan="2">用户名</td>
+            <td><input type="text" name="text1" size="15" naxlenth="12" width="21"><button type="button">检测用户名</button></td>
+            <td><span>请输入你的姓名,可是中文，英文及特殊符号的组合</span></td>
+        <tr>
+
+
+
+    </tr>
+        </tr>
+        <tr>
+            <td align="left" height="50" bgcolor="#7fffd4" >电子邮箱</td>
+            <td width="30"><input type="text" name="text2" size="20"></td>
+            <td class="color" > 请输入常用邮箱地址 </td>
+        </tr>
+        <tr>
+            <td align="left" height="60" bgcolor="#7fffd4" width="70">密码</td>
+            <td height="34" width="18"><input type="password" name="pwd" size="17" ></td>
+            <td><span>密码长度大于6位，请勿使用类似于生日等简单数字作为密码</span></td>
+        </tr>
+        <tr>
+            <td align="left" height="40" bgcolor="#7fffd4">确认密码</td>
+            <td width="18"><input type="password" name="pwd1" width="17"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td align="left" height="30" bgcolor="#7fffd4" width="100">密码提示问题</td>
+            <td ><select name="问题" class="select">
+                <option value="0">问题1</option>
+                <option value="">问题2</option>
+                <option value="" selected>我的问题3</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td align="left" height="30" bgcolor="#7fffd4">密码提示答案</td>
+            <td><input type="text" name="text3"></td>
+            <td><span>例： 我是张三</span></td>
+        </tr>
+        <tr>
+            <td align="left" height="30" bgcolor="#7fffd4" width="29">性别</td>
+            <td align="left" width="18" class="color">
+               <lable> <input type="radio" name="1" value="男">男</lable>
+
+                <lable><input type="radio" name="1" value="null">女</lable>
+                <td><span>请选择您的性别</span></td>
+            </td>
+
+        </tr>
+        <tr>
+            <td align="" height="120" bgcolor="#7fffd4" rowspan="3">兴趣爱好</td>
+            <pre>
+            <td align="center" class="boxline" width="100" colspan="2">
+                <lable><input type="checkbox" name="2" value="1" width="20">上网</lable>
+                <lable><input type="checkbox" name="3" value="2">游戏</lable>
+                <lable><input type="checkbox" name="4">看书</lable>
+            </pre>
+        <tr><td align="center"class="boxline" colspan="2">
+                <lable><input type="checkbox" name="4" checked="checked">运动</lable>
+                <lable><input type="checkbox" name="4" checked="checked">旅游</lable>
+                <lable><input type="checkbox" name="4">唱歌</lable>
+        </td></tr>
+        <tr><td align="center"class="boxline" colspan="2">
+                <lable><input type="checkbox" name="4">交友</lable>
+                <lable><input type="checkbox" name="4">聊天</lable>
+                <lable><input type="checkbox" name="4">其他</lable>
+        </td></tr>
+
+        <tr>
+            <td  height="9"  colspan="2" ><input type="checkbox">我已仔细阅读并接受用户协议</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td align="center" colspan="3"><input type="submit">&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset"></td></td>
+
+        </tr>
+
+
+
+
+
+
+    </table>
+    </div>
+
+</form>
+</body>
+</html>

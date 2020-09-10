@@ -1,0 +1,28 @@
+.heyuan{
+    width:650px;
+    height:500px;
+    border: 1px red solid;
+    border:none;
+    position:absolute;
+    top:55px;left:20px;
+    background: url(i3/show_list_bg.jpg) no-repeat;
+    background-position: right top;
+
+}
+.content1{
+    width:700px;
+    height:675px;
+    border:black solid 1px;
+//border:none;
+    position:absolute; left:40px;top:115px;
+    background-color: #F3F3EB;
+}
+.right1{
+    width:15px;
+    height:710px;
+    position:absolute;left:740px;top:85px;
+    border-right:#990101 solid 4px ;
+    border-bottom: #990101 6px solid;
+//border:none;
+    background-image: url("i3/main_bg.gif");
+}

@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet"type="text/css" href="index2.css">
+</head>
+<body>
+    <div align="center">
+        <div class="dianying">
+            <div align="center">
+                <div class="dianying1">
+                    <ul>
+                        <li>
+                            <a>
+                                全部
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a>
+                                华语电影
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a>
+                                欧美电影
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a>
+                                日本电影
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a>
+                                其他国家
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a>
+                                更多电影
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div align="center">
+                <div class="box">
+                    <img class="box-img" src="1.jpg">
+                    <img class="box-img" src="2.jpg">
+                    <img class="box-img" src="3.jpg">
+                    <img class="box-img" src="4.jpg">
+                    <img class="box-img" src="5.jpg">
+                    <img class="box-img" src="6.png">
+                    <div class="box-left">&lt;</div>
+                    <div class="box-right">&gt;</div>
+                    <div class="box-zhiding">
+                        <ul>
+                            <li class="botton"></li>
+                            <li class="botton"></li>
+                            <li class="botton"></li>
+                            <li class="botton"></li>
+                            <li class="botton"></li>
+                            <li class="botton"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+            <script type="text/javascript">
+                $(function(){
+                    var index=0;//标记当前图片索引
+                    var f;
+                    dingshiqi();
+                    function dingshiqi(){
+                        f=setInterval(function(){
+                            if(index==$(".box-img").length-1){
+                                index=0;
+                                $(".box-img").css("opacity","0");
+                                $(".box-img").eq(index).css("opacity","1");
+                                $(".botton").css("background-color","#ccc");
+                                $(".botton").eq(index).css("background-color","#fff");
+                            }else{
+                                index++;
+                                $(".box-img").css("opacity","0");
+                                $(".box-img").eq(index).css("opacity","1");
+                                $(".botton").css("background-color","#ccc");
+                                $(".botton").eq(index).css("background-color","#fff");
+                            }
+                        },4000)
+                    }
+                    $(".box-left").click(function(){
+                        clearInterval(f);
+                        if(index==0){
+                            index=$(".box-img").length-1;
+                            $(".box-img").css("opacity","0");
+                            $(".box-img").eq(index).css("opacity","1");
+                            $(".botton").css("background-color","#ccc");
+                            $(".botton").eq(index).css("background-color","#fff");
+                            dingshiqi();
+                        }
+                        else{
+                            index--;
+                            $(".box-img").css("opacity","0");
+                            $(".box-img").eq(index).css("opacity","1");
+                            $(".botton").css("background-color","#ccc");
+                            $(".botton").eq(index).css("background-color","#fff");
+                            dingshiqi();
+                        }
+                    })
+                    $(".box-right").click(function(){
+                        clearInterval(f);
+                        if(index==$(".box-img").length-1){
+                            index=0;
+                            $(".box-img").css("opacity","0");
+                            $(".box-img").eq(index).css("opacity","1");
+                            $(".botton").css("background-color","#ccc");
+                            $(".botton").eq(index).css("background-color","#fff");
+                            dingshiqi();
+                        }
+                        else{
+                            index++;
+                            $(".box-img").css("opacity","0");
+                            $(".box-img").eq(index).css("opacity","1");
+                            $(".botton").css("background-color","#ccc");
+                            $(".botton").eq(index).css("background-color","#fff");
+                            dingshiqi();
+                        }
+                    })
+
+                    $(".botton").click(function(){
+                        clearInterval(f);
+                        var indexx=$(this).index();
+                        index=indexx;
+                        $(".box-img").css("opacity","0");
+                        $(".box-img").eq(index).css("opacity","1");
+                        $(".botton").css("background-color","#ccc");
+                        $(".botton").eq(index).css("background-color","#fff");
+                        dingshiqi();
+                    })
+
+                })
+            </script>
+            <div align="center">
+                <div class="dianying3">
+                    <div class="dianying31">
+                        <span class="biaoqian1">
+                            热播
+                        </span>
+                        <span class="biaoqian2">
+                            全部
+                        </span>
+                        <p class="p1">
+                            <span class="lan">播放数量&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span><span class="lan">更新时间</span>
+                        </p>
+                        <p class="p2">
+                            <span class="lan">上映时间&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span> <span class="lan">免费</span> <span class="lan">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp付费</span>
+                        </p>
+                    </div>
+                    <div class="dianying32">
+                        <span class="biaoqian1">
+                            地区
+                        </span>
+                        <span class="biaoqian2">
+                            全部
+                        </span>
+                        <p class="p1">
+                            <span  class="lan">中国大陆&nbsp</span> <span class="lan">中国港台&nbsp</span>
+                        </p>
+                        <p class="p2">
+                            <span  class="lan">日本&nbsp&nbsp&nbsp</span><span  class="lan">法国&nbsp&nbsp&nbsp</span><span  class="lan">韩国&nbsp&nbsp&nbsp</span><span  class="lan">英国</span>
+                        </p>
+                    </div>
+                    <div class="dianying33">
+                        <span class="biaoqian1">
+                            风格
+                        </span>
+                        <span class="biaoqian2">
+                            全部
+                        </span>
+                        <p class="p1">
+                            <span  class="lan">剧情&nbsp</span><span  class="lan">喜剧&nbsp</span><span  class="lan">爱情&nbsp</span><span  class="lan">动作</span>
+                        </p>
+                        <p class="p2">
+                            <span  class="lan">恐怖&nbsp</span><span  class="lan">科幻&nbsp</span><span  class="lan">犯罪&nbsp</span><span  class="lan">惊悚</span>
+                        </p>
+                    </div>
+                    <div class="dianying34">
+                        <span class="biaoqian1">
+                            热搜
+                        </span>
+                        <span class="biaoqian2">
+                            全部
+                        </span>
+                        <p class="p1">
+                            <span  class="lan">指环王&nbsp</span><span  class="lan">哈利波特</span><span  class="lan">&nbsp周星驰</span>
+                        </p>
+                        <p class="p2">
+                            <span  class="lan">孙悟空&nbsp&nbsp&nbsp</span><span  class="lan">姜子牙</span><span  class="lan">&nbsp&nbsp&nbsp哪吒</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div align="center">
+                <div class="dianying4">
+                    <div class="dianying41">
+                        <p style="font-size: 50px;float: left;margin-top: 10px;">
+                            热播推荐
+                        </p>
+                        <ul>
+                            <li title="廉政风云" style="margin-top: 100px">
+                                <img class="rebo" src="lianzhengfengyun.png">
+                            </li>
+                            <li title="追龙"style="margin-top: 100px">
+                                <img class="rebo" src="zhuilonger.png">
+                            </li>
+                            <li title="使徒行者2:碟影行动" style="margin-top: 100px">
+                                <img class="rebo" src="shituxingzhe.png">
+                            </li>
+                            <li title="假如猫从世界上消失了"  style="margin-top: 100px">
+                                <img class="rebo" src="nsns.png">
+                            </li>
+                            <li title="食梦者" style="margin-top: 100px">
+                                <img class="rebo" src="rben.png">
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a class="dianyingming1">
+                                    廉政风云
+                                </a>
+                            </li>
+                            <li>
+                                <a style="margin-left: 210px" class="dianyingming1">
+                                    追龙
+                                </a>
+                            </li>
+                            <li>
+                                <a style="margin-left: 270px" class="dianyingming1">
+                                    使徒行者2:碟影行动
+                                </a>
+                            </li>
+                            <li>
+                                <a style="margin-left: 80px" class="dianyingming1">
+                                    假如猫从世界上消失了
+                                </a>
+                            </li>
+                            <li>
+                                <a style="margin-left: 50px" class="dianyingming1">
+                                    食梦者
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dianyingming2">
+                                    无间道导演麦兆辉新作
+                                </a>
+                            </li>
+                            <li>
+                                <a style="margin-left: 50px" class="dianyingming2">
+                                    雷洛跛豪黑白联手
+                                </a>
+                            </li>
+                            <li>
+                                <a style="margin-left: 108px" class="dianyingming2">
+                                    影帝联手兄弟燃情
+                                </a>
+                            </li>
+                            <li>
+                                <a style="margin-left: 100px" class="dianyingming2">
+                                    为延长生命让猫消失？
+                                </a>
+                            </li>
+                            <li>
+                                <a style="margin-left: 50px" class="dianyingming2">
+                                    真人版超燃同名漫改
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li title="玛丽马克" style="margin-top: 100px">
+                                <img class="rebo" src="mary.png">
+                            </li>
+                            <li title=" 傲慢" style="margin-top: 100px">
+                                <img class="rebo" src="zom.png">
+                            </li>
+                            <li title="新鲨卷风：饿鲨来袭" style="margin-top: 100px">
+                                <img class="rebo" src="sha.png">
+                            </li>
+                            <li title="来见证鬼吹灯之寻龙诀" style="margin-top: 100px">
+                                <img class="rebo" src="xunlongju.png">
+                            </li>
+                            <li title="绿皮车" style="margin-top: 100px">
+                                <img class="rebo" src="lv.png">
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a class="dianyingming1">
+                                    玛丽马克
+                                </a>
+                            </li>
+                            <li>
+                                <a style="margin-left: 210px" class="dianyingming1">
+                                    傲慢
+                                </a>
+                            </li>
+                            <li>
+                                <a style="margin-left: 270px" class="dianyingming1">
+                                    新鲨卷风：饿鲨来袭
+                                </a>
+                            </li>
+                            <li>
+                                <a style="margin-left: 80px" class="dianyingming1">
+                                    来见证鬼吹灯之寻龙诀
+                                </a>
+                            </li>
+                            <li>
+                                <a style="margin-left: 50px" class="dianyingming1">
+                                    绿皮车
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dianyingming2">
+                                    观看高分致郁黏土动画
+                                </a>
+                            </li>
+                            <li>
+                                <a style="margin-left: 50px" class="dianyingming2">
+                                    五名声媛暴打僵尸
+                                </a>
+                            </li>
+                            <li>
+                                <a style="margin-left: 108px" class="dianyingming2">
+                                    记录鲨生惊恐时刻
+                                </a>
+                            </li>
+                            <li>
+                                <a style="margin-left: 100px" class="dianyingming2">
+                                    为寻找宝藏让人消失？
+                                </a>
+                            </li>
+                            <li>
+                                <a style="margin-left: 50px" class="dianyingming2">
+                                    真实改编奥斯卡影片
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dianying42">
+                        <p class="p3">
+                            <span style="float: left">排行</span><span style="color: #00a1d6;float:left;margin-top:18px;font-size: 25px;margin-left: 45px">全部</span>
+                            <select style="border-radius:12px;margin-right:50px;float: right;width: 100px;height: 50px;margin-top: 10px">
+                                <optgroup label>
+                                    <option value="0">星期一</option>
+                                    <option value="0">星期二</option>
+                                    <option value="0">星期三</option>
+                                    <option value="0">星期四</option>
+                                    <option value="0">星期五</option>
+                                </optgroup>
+                            </select>
+                        </p>
+                        <ul >
+                            <li class="xuhao">
+                                <img class="paiming" src="yi.png">
+                                <span class="paimingzi">假如猫从世界上消失了</span>
+                            </li>
+                        </ul>
+                        <ul >
+                            <li class="xuhao">
+                                <img class="paiming" src="er.png">
+                                <span class="paimingzi">哪吒之魔童降世</span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="xuhao">
+                                <img class="paiming" src="san.png">
+                                <span class="paimingzi">白蛇缘起</span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="xuhao">
+                                <img class="paiming" src="si.png">
+                                <span class="paimingzi">追龙</span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="xuhao">
+                                <img class="paiming" src="wu.png">
+                                <span class="paimingzi">异形3</span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="xuhao">
+                                <img class="paiming" src="liu.png">
+                                <span class="paimingzi">魁拔:最后的结局</span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="xuhao">
+                                <img class="paiming" src="qi.png">
+                                <span class="paimingzi">你的名字</span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="xuhao">
+                                <img class="paiming" src="ba.png">
+                                <span class="paimingzi">功夫</span>
+                            </li>
+                        </ul>
+                        <p class="p4">
+                            更多
+                        </p>
+                        <p class="p5">
+                            <img title="指环王之霍比特人" style="width: 480px;height: 328px;margin-top: 40px;border-radius: 12px" src="zhihuanwang.png">
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div align="center">
+                <div class="dianying5">
+                    <div class="dianying51">
+                        <p style="font-size: 50px;float: left;margin-top: 10px;">
+                            精彩热议
+                        </p>
+                        <ul>
+                            <li title="心灵奇缘" style="margin-top: 100px">
+                                <img class="reyi" src="chocho.png">
+                            </li>
+                            <li title="宇宙探寻" style="margin-top: 100px">
+                                <img class="reyi" src="tansuo.png">
+                            </li>
+                            <li title="猛禽小队和哈莉·奎茵" style="margin-top: 100px">
+                                <img class="reyi" src="xiaocho.png">
+                            </li>
+                            <li title="王牌特工：源起" style="margin-top: 100px">
+                                <img class="reyi" src="gofu.png">
+                            </li>
+                            <li title="罪之声" style="margin-top: 100px">
+                                <img class="reyi" src="qianzi.png">
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a style="float: left; width: 300px;font-size: 25px">
+                                    《心灵奇旅》片段动听首发！一段美妙暖心的旅程即将开启
+                                </a>
+                            </li>
+                            <li>
+                                <a style="float: left; width: 290px;margin-left:25px;font-size: 25px " >
+                                    刻进DNA里的画面——电影为舟，开启探索未来之旅【BILIBILI 11周年】
+                                </a>
+                            </li>
+                            <li>
+                                <a style="float: left; width: 280px;margin-left:35px;font-size: 25px " >
+                                    【猛禽小队和哈莉·奎茵】中字预告 猛禽小队，集结！
+                                </a>
+                            </li>
+                            <li>
+                                <a style="float: left; width: 280px;margin-left:40px ;font-size: 25px" >
+                                    【中字】《王牌特工：源起》全新预告，追溯“王男”起源往事
+                                </a>
+                            </li>
+                            <li>
+                                <a style="margin-left: 35.9px;width: 200px ;font-size: 25px"  >
+                                    小栗旬、星野源共演电影《罪之声》特报
+                                </a>
+                            </li>
+                         </ul>
+                    </div>
+                    <div class="dianying52">
+                        <img title="紫罗兰永恒花园" style="width: 490px;height: 300px;margin-top: 100px" src="ziluolan.png">
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div align="center">
+                <div class="dianying6">
+                    <div class="dianying61">
+                        <p style="font-size: 50px;float: left;margin-top: 10px;">
+                            即将上线
+                        </p>
+                        <ul>
+                            <li style="margin-top: 90px;margin-left: 100px">
+                                <a style="color: #6d757a;float:left;font-size: 27px" >
+                                    敬请期待&nbsp
+                                </a>
+                            </li>
+                            <li>
+                                <a style="color: #6d757a;float:left;margin-left: 200px;font-size: 27px">
+                                    敬请期待&nbsp
+                                </a>
+                            </li>
+                            <li>
+                                <a style="color: #6d757a;float:left;margin-left: 180px;font-size: 27px">
+                                    敬请期待&nbsp
+                                </a>
+                            </li>
+                            <li>
+                                <a style="color: #6d757a;float:left;margin-left: 200px;font-size: 27px">
+                                   敬请期待
+                                </a>
+                            </li>
+                            <li>
+                                <a style="color: #6d757a;float:left;margin-left: 200px;font-size: 27px">
+                                    敬请期待
+                                </a>
+                            </li>
+
+                        </ul>
+                        <ul>
+                            <li style="margin-top: 100px">
+                                <img title="天气之子" class="rebo" src="tianqi.png">
+                            </li>
+                            <li style="margin-top: 100px">
+                                <img title="哈莉" class="rebo" src="bangqiu.png">
+                            </li>
+                            <li style="margin-top: 100px">
+                                <img title="正义的慈悲" class="rebo" src="mercy.png">
+                            </li>
+                            <li style="margin-top: 100px">
+                                <img title="回归之路" class="rebo" src="back.png">
+                            </li>
+                            <li style="margin-top: 100px">
+                                <img title="青春路" class="rebo" src="qingc.png">
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a class="dianyingming1">
+                                    天气之子
+                                </a>
+                            </li>
+                            <li>
+                                <a style="margin-left: 210px" class="dianyingming1">
+                                    哈莉
+                                </a>
+                            </li>
+                            <li>
+                                <a style="margin-left: 270px" class="dianyingming1">
+                                    新映上线正义的慈悲
+                                </a>
+                            </li>
+                            <li>
+                                <a style="margin-left: 80px" class="dianyingming1">
+                                    重新演绎回归之路的人
+                                </a>
+                            </li>
+                            <li>
+                                <a style="margin-left: 50px" class="dianyingming1">
+                                    青春录
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dianyingming2">
+                                    已有17.5万人系列追剧
+                                </a>
+                            </li>
+                            <li>
+                                <a style="margin-left: 50px" class="dianyingming2">
+                                    已有20.6万人追剧
+                                </a>
+                            </li>
+                            <li>
+                                <a style="margin-left: 108px" class="dianyingming2">
+                                    已有29.6万人追剧
+                                </a>
+                            </li>
+                            <li>
+                                <a style="margin-left: 100px" class="dianyingming2">
+                                    已有32万人系列追剧
+                                </a>
+                            </li>
+                            <li>
+                                <a style="margin-left: 65px" class="dianyingming2">
+                                    已有5620人系列追剧
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+            <div align="center">
+                <div class="dianying7">
+                    <div class="dianying71">
+                        <div class="dianying711">
+                            <p style="font-size: 50px;float: left;margin-top: 10px;">
+                                独家策划
+                            </p>
+                            <img title="低分电影" style="float: left;height: 600px;width: 610px;margin-right: 800px;margin-top: 20px" src="difen.png">
+                        </div>
+                        <div class="lan2">
+                            <ul>
+                                <li style="margin-top: 100px">
+                                    <img title="变形金刚" class="dujia" src="mein.png">
+                                </li>
+                                <li style="margin-top: 100px">
+                                    <img title="教父" class="dujia" src="lianglaoto.png">
+                                </li>
+                                <li style="margin-top: 100px">
+                                    <img title="碟中谍" class="dujia" src="tego.png">
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a style="float: left; width: 100px;margin-left:21px;font-size: 25px " >
+                                        变形金刚
+                                    </a>
+                                </li>
+                                <li>
+                                    <a style="float: left; width: 280px;margin-left:100px ;font-size: 25px" >
+                                        教父
+                                    </a>
+                                </li>
+                                <li>
+                                    <a style="float:left;margin-left: 100px;width: 200px ;font-size: 25px"  >
+                                        碟中谍
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a style="color: #6d757a;margin-bottom:22px;margin-top: 20px;float: left; width: 250px;margin-left:8px;font-size: 25px " >
+                                        <span>大型机器人实力对决</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a style="color: #6d757a;margin-bottom:22px;margin-top: 20px;float: left; width: 280px;margin-left:25px ;font-size: 25px" >
+                                        教堂之间的阴谋
+                                    </a>
+                                </li>
+                                <li>
+                                    <a style="color: #6d757a;margin-bottom:22px;margin-top: 20px;float:left;margin-left: 85px;width: 250px ;font-size: 25px"  >
+                                        枪林弹雨与勾心斗角
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li style="margin-top: 100px">
+                                    <img title="恐怖湖都" class="dujia" src="shejian.png">
+                                </li>
+                                <li style="margin-top: 100px">
+                                    <img title="猎人" class="dujia" src="maozilaoto.png">
+                                </li>
+                                <li style="margin-top: 100px">
+                                    <img title="兄弟情" class="dujia" src="tuoni.png">
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a style="float: left; width: 100px;margin-left:21px;font-size: 25px " >
+                                       恐怖湖都
+                                    </a>
+                                </li>
+                                <li>
+                                    <a style="float: left; width: 280px;margin-left:100px ;font-size: 25px" >
+                                        猎人
+                                    </a>
+                                </li>
+                                <li>
+                                    <a style="float:left;margin-left: 100px;width: 200px ;font-size: 25px"  >
+                                        兄弟情
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a style="margin-top: 20px;float: left; width: 250px;;font-size: 25px " >
+                                        <span style="color: #6d757a;width: 240px;float: left">来自人内心的恐怖</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a style="color: #6d757a;margin-top: 20px;float: left; width: 280px;margin-left:56px ;font-size: 25px" >
+                                        金钱的权利让你迷茫
+                                    </a>
+                                </li>
+                                <li>
+                                    <a style="color: #6d757a;margin-top: 20px;float:left;margin-left: 80px;width: 200px ;font-size: 25px"  >
+                                        兄弟共同对抗敌人
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dianying72">
+                        <img title="蝙蝠侠之黑暗骑士" style=" width: 490px;height: 300px; margin-top: 80px;" src="bianfuxia.png">
+                        <img title="梦工场动画" style="    width: 490px;height: 300px;margin-top: 30px;" src="menggochang.png">
+                    </div>
+                </div>
+            </div>
+            <div align="center">
+                <div class="dianying8">
+
+                </div>
+            </div>
+            <div align="center">
+                <div class="dianying9">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
